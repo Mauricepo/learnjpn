@@ -7,8 +7,8 @@ import { ColorSchemeScript, MantineProvider } from '@mantine/core'
 const inter = interFunction({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Lagebild',
-  description: 'Ein Lagebild'
+  title: 'Sirice',
+  description: 'Sportapp'
 }
 
 /**
