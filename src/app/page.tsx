@@ -1,5 +1,6 @@
 'use client'
 import { Inputs } from '@/components/Inputs'
+import { Leader } from '@/components/Leader'
 import { Personbutton } from '@/components/Personbutton'
 import { Progressbar } from '@/components/Progressbar'
 import { Statistics } from '@/components/Statistics'
@@ -13,6 +14,7 @@ export default function Home() {
       <Personbutton></Personbutton>
       <Statistics></Statistics>
       <Inputs></Inputs>
+      <Leader></Leader>
       <Progressbar></Progressbar>
     </>
   )

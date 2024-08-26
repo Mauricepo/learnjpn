@@ -8,14 +8,10 @@ export const Personbutton: (props: PersonbuttonProps) => ReactElement = (props: 
   const { WhoImA, setPerson }: PointsStore = usePointsStore((state: PointsStore) => state)
   const [value, setValue] = useState('react')
 
+  useEffect(() => {
+    setValue('Maurice')
+  }, [])
 
-
-
-
-
-
-
-  
   useEffect(() => {
     setPerson(value == 'Maurice' ? true : false)
   }, [value])
