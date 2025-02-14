@@ -16,7 +16,7 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectPr
     if (!start) {
       newWord()
     }
-
+    console.log('useEffect')
     setStart(true)
   }, [])
 
@@ -38,13 +38,13 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectPr
     if (word === randomWord) {
       notifications.show({
         title: 'Richtig',
-        message: 'Korrekt, gut gemacht 🛑'
+        message: 'Korrekt, gut gemacht 🌟'
       })
       newWord()
     } else {
       notifications.show({
         title: 'Falsch',
-        message: 'Leider falsch, versuche es erneut 🌟'
+        message: 'Leider falsch, versuche es erneut 🛑'
       })
     }
   }
