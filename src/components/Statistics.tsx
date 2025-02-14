@@ -6,11 +6,11 @@ import { PointsStore, usePointsStore } from '@/utils/stores/points'
 interface StatisticsProps {}
 
 export const Statistics: (props: StatisticsProps) => ReactElement = (props: StatisticsProps): ReactElement => {
-  const { getData, MauricePkt, SinaPkt, MauriceWght, SinaWght, WhoImA }: PointsStore = usePointsStore((state: PointsStore) => state)
+  // const { getData, MauricePkt, SinaPkt, MauriceWght, SinaWght, WhoImA }: PointsStore = usePointsStore((state: PointsStore) => state)
 
-  useEffect(() => {
-    getData()
-  }, [])
+  // useEffect(() => {
+  //   getData()
+  // }, [])
 
   return (
     <Center h={100}>

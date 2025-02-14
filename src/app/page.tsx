@@ -1,9 +1,7 @@
 'use client'
-import { Inputs } from '@/components/Inputs'
-import { Leader } from '@/components/Leader'
-import { Personbutton } from '@/components/Personbutton'
-import { Progressbar } from '@/components/Progressbar'
-import { Statistics } from '@/components/Statistics'
+
+import { Startbutton } from '@/components/Startbutton'
+
 /**
  * Home Function
  * @return {ReactElement} ReactElement
@@ -11,11 +9,7 @@ import { Statistics } from '@/components/Statistics'
 export default function Home() {
   return (
     <>
-      <Personbutton></Personbutton>
-      <Statistics></Statistics>
-      <Inputs></Inputs>
-      <Leader></Leader>
-      <Progressbar></Progressbar>
+      <Startbutton></Startbutton>
     </>
   )
 }
