@@ -33,7 +33,7 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectPr
     if (word === randomWord) {
       notifications.show({
         title: 'Richtig',
-        message: 'Korrekt, gut gemacht 🌟'
+        message: 'Korrekt, gut gemacht 🛑'
       })
       newWord()
     } else {
