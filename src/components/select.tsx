@@ -1,4 +1,4 @@
-import { Blockquote, Button, Card, Center, Grid, Group, MantineProvider, Space, Text, Tooltip } from '@mantine/core'
+import { Blockquote, Button, Card, Center, Grid, Group, MantineProvider, SelectProps, Space, Text, Tooltip } from '@mantine/core'
 import { ReactElement, useEffect, useState } from 'react'
 
 import { japaneseStore, useJapaneseStore } from '@/utils/stores/japanese'
@@ -6,7 +6,7 @@ import { word } from '@/utils/types/words'
 import { notifications, Notifications } from '@mantine/notifications'
 interface SDragDropProps {}
 
-export const SelectWord: (props: SelectProps) => ReactElement = (props: selectPropsProps): ReactElement => {
+export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectProps): ReactElement => {
   const { words }: japaneseStore = useJapaneseStore((state: japaneseStore) => state)
   const [randomWord, setRandomWord] = useState<word>()
   const [answers, setAnswers] = useState<word[]>([])
