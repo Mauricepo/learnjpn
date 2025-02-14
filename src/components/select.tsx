@@ -36,12 +36,16 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectPr
   const checkAnwster = (word: word): void => {
     if (word === randomWord) {
       notifications.show({
+        position: 'bottom-center',
+        color: 'green',
         title: 'Richtig',
         message: 'Korrekt, gut gemacht 🌟'
       })
       newWord()
     } else {
       notifications.show({
+        position: 'bottom-center',
+        color: 'red',
         title: 'Falsch',
         message: 'Leider falsch, versuche es erneut 🛑'
       })
