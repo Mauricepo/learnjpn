@@ -67,7 +67,7 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectPr
               <Group>
                 {answers.map((answer, index) => (
                   <Tooltip label={answer.romaji} key={index}>
-                    <Button onClick={() => checkAnwster(answer)}>{answer.hiragana + ' | ' + answer.hiragana}</Button>
+                    <Button onClick={() => checkAnwster(answer)}>{answer.hiragana + ' | ' + answer.romaji}</Button>
                   </Tooltip>
                 ))}
               </Group>
