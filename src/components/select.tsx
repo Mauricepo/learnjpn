@@ -10,6 +10,7 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectPr
   const { words }: japaneseStore = useJapaneseStore((state: japaneseStore) => state)
   const [randomWord, setRandomWord] = useState<word>()
   const [answers, setAnswers] = useState<word[]>([])
+  const [wrongAnswer, setWrongAnswer] = useState<word>([])
 
   useEffect(() => {
     newWord()
