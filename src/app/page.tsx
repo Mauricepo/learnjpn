@@ -7,9 +7,5 @@ import { Startbutton } from '@/components/Startbutton'
  * @return {ReactElement} ReactElement
  */
 export default function Home() {
-  return (
-    <>
-      <Startbutton></Startbutton>
-    </>
-  )
+  return <Startbutton></Startbutton>
 }

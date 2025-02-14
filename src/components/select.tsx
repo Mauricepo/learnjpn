@@ -13,7 +13,7 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectPr
 
   useEffect(() => {
     newWord()
-  }, [])
+  })
 
   const newWord = (): void => {
     const newRandomWord = words[Math.floor(Math.random() * words.length)]
