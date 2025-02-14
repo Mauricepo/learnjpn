@@ -12,7 +12,7 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectPr
   const [answers, setAnswers] = useState<word[]>([])
 
   useEffect(() => {
-    newWord()
+    if (randomWord === undefined) newWord()
   }, [])
 
   const newWord = (): void => {
