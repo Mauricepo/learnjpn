@@ -1,4 +1,4 @@
-import { Blockquote, Button, Card, Center, Grid, Group, MantineProvider, Space, Text } from '@mantine/core'
+import { Blockquote, Button, Card, Center, Grid, Group, MantineProvider, Space, Text, Tooltip } from '@mantine/core'
 import { ReactElement, useEffect, useState } from 'react'
 
 import { japaneseStore, useJapaneseStore } from '@/utils/stores/japanese'
@@ -62,9 +62,9 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: selectPr
             <Grid.Col span={{ base: 10, md: 12 }} style={{ display: 'flex', justifyContent: 'center' }}>
               <Group>
                 {answers.map((answer, index) => (
-                  <Button onClick={() => checkAnwster(answer)} key={index}>
-                    {answer.hiragana}
-                  </Button>
+                  <Tooltip label={answer.romaji} key={index}>
+                    <Button onClick={() => checkAnwster(answer)}>{answer.hiragana}</Button>
+                  </Tooltip>
                 ))}
               </Group>
             </Grid.Col>
