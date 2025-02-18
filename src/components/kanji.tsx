@@ -21,6 +21,7 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
   }, [])
 
   const newkanji = (): void => {
+    setCorrect(false)
     const newRandomkanji = kanji[Math.floor(Math.random() * kanji.length)]
     setRandomkanji(newRandomkanji)
 
@@ -61,7 +62,7 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
         <Space h="xl" />
         <Card.Section component={Grid} inheritPadding>
           <Center>
-            <Grid.Col span={{ base: 12, md: 14 }} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Grid.Col span={{ base: 12, md: 12 }} style={{ display: 'flex', justifyContent: 'center' }}>
               <Group>
                 {answers.map((answer, index) => (
                   <Tooltip label={answer.romaji} key={index}>
