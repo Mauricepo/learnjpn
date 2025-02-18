@@ -1,50 +1,50 @@
 import { Blockquote, Button, Card, Center, Grid, Group, MantineProvider, SelectProps, Space, Text, Tooltip } from '@mantine/core'
 import { ReactElement, useEffect, useState } from 'react'
 
-import { japaneseStore, useJapaneseStore } from '@/utils/stores/japanese'
-import { word } from '@/utils/types/words'
+import { kanjiStore, useKanjiStore } from '@/utils/stores/kanji'
+import { kanji } from '@/utils/types/kanjis'
 import { notifications, Notifications } from '@mantine/notifications'
 interface SDragDropProps {}
 
-export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectProps): ReactElement => {
-  const { words }: japaneseStore = useJapaneseStore((state: japaneseStore) => state)
-  const [randomWord, setRandomWord] = useState<word>()
-  const [answers, setAnswers] = useState<word[]>([])
+export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectProps): ReactElement => {
+  const { kanji }: kanjiStore = useKanjiStore((state: kanjiStore) => state)
+  const [randomkanji, setRandomkanji] = useState<kanji>()
+  const [answers, setAnswers] = useState<kanji[]>([])
   const [start, setStart] = useState<boolean>(false)
 
   useEffect(() => {
     if (!start) {
-      newWord()
+      newkanji()
     }
     setStart(true)
   }, [])
 
-  const newWord = (): void => {
-    const newRandomWord = words[Math.floor(Math.random() * words.length)]
-    setRandomWord(newRandomWord)
+  const newkanji = (): void => {
+    const newRandomkanji = kanji[Math.floor(Math.random() * kanji.length)]
+    setRandomkanji(newRandomkanji)
 
-    const newAnswers = new Set<word>()
-    newAnswers.add(newRandomWord)
+    const newAnswers = new Set<kanji>()
+    newAnswers.add(newRandomkanji)
 
     while (newAnswers.size < 5) {
-      newAnswers.add(words[Math.floor(Math.random() * words.length)])
+      newAnswers.add(kanji[Math.floor(Math.random() * kanji.length)])
     }
 
     setAnswers(Array.from(newAnswers).sort(() => Math.random() - 0.5))
   }
 
-  const checkAnwster = (word: word): void => {
-    if (word === randomWord) {
+  const checkAnwster = (kanji: kanji): void => {
+    if (kanji === randomkanji) {
       notifications.show({
-        position: 'bottom-right',
+        position: 'bottom-center',
         color: 'green',
         title: 'Richtig',
         message: 'Korrekt, gut gemacht 🌟'
       })
-      newWord()
+      newkanji()
     } else {
       notifications.show({
-        position: 'bottom-right',
+        position: 'bottom-center',
         color: 'red',
         title: 'Falsch',
         message: 'Leider falsch, versuche es erneut 🛑'
@@ -58,7 +58,7 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectPr
         <Card.Section component={Grid} inheritPadding>
           <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
             <Blockquote color="blue" mt="xl">
-              <Text size="xl">{randomWord?.definition}</Text>
+              <Text size="xl">{randomkanji?.kanji}</Text>
             </Blockquote>
           </Grid.Col>
         </Card.Section>
@@ -70,7 +70,7 @@ export const SelectWord: (props: SelectProps) => ReactElement = (props: SelectPr
               <Group>
                 {answers.map((answer, index) => (
                   <Tooltip label={answer.romaji} key={index}>
-                    <Button onClick={() => checkAnwster(answer)}>{answer.hiragana + ' | ' + answer.romaji}</Button>
+                    <Button onClick={() => checkAnwster(answer)}>{answer.meaning}</Button>
                   </Tooltip>
                 ))}
               </Group>
