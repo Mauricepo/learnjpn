@@ -2,7 +2,7 @@ import { Blockquote, Button, Card, Center, Grid, Group, MantineProvider, SelectP
 import { ReactElement, useEffect, useState } from 'react'
 
 import { kanjiStore, useKanjiStore } from '@/utils/stores/kanji'
-import { kanji } from '@/utils/types/kanjis'
+import { kanji } from '@/utils/types/words'
 import { notifications, Notifications } from '@mantine/notifications'
 interface SDragDropProps {}
 
