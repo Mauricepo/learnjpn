@@ -11,6 +11,7 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
   const [randomkanji, setRandomkanji] = useState<kanji>()
   const [answers, setAnswers] = useState<kanji[]>([])
   const [start, setStart] = useState<boolean>(false)
+  const [correct, setCorrect] = useState<boolean>(false)
 
   useEffect(() => {
     if (!start) {
@@ -35,13 +36,7 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
 
   const checkAnwster = (kanji: kanji): void => {
     if (kanji === randomkanji) {
-      notifications.show({
-        position: 'bottom-center',
-        color: 'green',
-        title: 'Richtig',
-        message: 'Korrekt, gut gemacht 🌟'
-      })
-      newkanji()
+      setCorrect(true)
     } else {
       notifications.show({
         position: 'bottom-center',
@@ -56,7 +51,7 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
     <MantineProvider>
       <Card style={{ paddingTop: '500px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Card.Section component={Grid} inheritPadding>
-          <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid.Col span={{ base: 12, md: 12 }} style={{ display: 'flex', justifyContent: 'center' }}>
             <Blockquote color="blue" mt="xl">
               <Text size="xl">{randomkanji?.kanji}</Text>
             </Blockquote>
@@ -66,16 +61,21 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
         <Space h="xl" />
         <Card.Section component={Grid} inheritPadding>
           <Center>
-            <Grid.Col span={{ base: 10, md: 12 }} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Grid.Col span={{ base: 12, md: 14 }} style={{ display: 'flex', justifyContent: 'center' }}>
               <Group>
                 {answers.map((answer, index) => (
                   <Tooltip label={answer.romaji} key={index}>
-                    <Button onClick={() => checkAnwster(answer)}>{answer.meaning}</Button>
+                    <Button color={answer === randomkanji && correct ? 'green' : 'blue'} onClick={() => checkAnwster(answer)}>
+                      {answer.meaning}
+                    </Button>
                   </Tooltip>
                 ))}
               </Group>
             </Grid.Col>
           </Center>
+          <Grid.Col span={{ base: 12, md: 12 }} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Center>{correct && <Button onClick={() => newkanji()}>Nächtes</Button>}</Center>
+          </Grid.Col>
         </Card.Section>
       </Card>
       <Notifications />

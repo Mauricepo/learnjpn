@@ -13,7 +13,7 @@ export const Startbutton: (props: PersonbuttonProps) => ReactElement = (props: P
 
   return (
     <Center h={100}>
-      {!voc && !sen && (
+      {!voc && !sen && !kanji && (
         <>
           <h1>Wähle eine Übung</h1>
           <button onClick={() => setVoc(true)}>Vokabeln üben</button>
