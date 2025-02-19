@@ -16,7 +16,6 @@ export interface sentence {
   context: string | null
 }
 export interface kanji {
-  japanese: string
   kanji: string
   hiragana: string
   meaning: string
