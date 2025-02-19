@@ -633,65 +633,119 @@ export const useJapaneseStore = create<japaneseStore>((set, get) => ({
       context: null
     },
     {
-      japanese: '山下先生は8時に朝ご飯を食べます。',
-      hiragana: 'やましたせんせいは8じにあさごはんをたべます。',
-      romaji: 'Yamashita-sensei wa 8-ji ni asagohan o tabemasu.',
-      translation: 'Professor Yamashita isst um 8 Uhr Frühstück.',
+      japanese: '山下 先生 は 八時 に 朝ご飯 を 食べます 。',
+      hiragana: 'やました せんせいは はち じに あさごはんを たべます 。',
+      romaji: 'Yamashita-sensei wa hachi-ji ni asagohan o tabemasu.',
+      translation: "Professor Yamashita eats breakfast at 8 o'clock.",
       keywords: ['sentence', 'breakfast', "8 o'clock", 'chapter3'],
       answer: null,
       context: null
     },
     {
-      japanese: '山下先生は8時30分に大学へ行きます。',
-      hiragana: 'やましたせんせいは8じ30ぷんにだいがくへいきます。',
-      romaji: 'Yamashita-sensei wa 8-ji 30-pun ni daigaku e ikimasu.',
-      translation: 'Professor Yamashita geht um 8:30 Uhr zur Universität.',
+      japanese: '山下 先生 は 八時 三十分 に 大学 へ 行きます 。',
+      hiragana: 'やました せんせいは はち じ さんじゅっ ぷんに だいがくへ いきます 。',
+      romaji: 'Yamashita-sensei wa hachi-ji sanjū-pun ni daigaku e ikimasu.',
+      translation: 'Professor Yamashita goes to university at 8:30.',
       keywords: ['sentence', 'university', '8:30', 'chapter3'],
       answer: null,
       context: null
     },
     {
-      japanese: '山下先生は12時に昼ご飯を食べます。',
-      hiragana: 'やましたせんせいは12じにひるごはんをたべます。',
-      romaji: 'Yamashita-sensei wa 12-ji ni hirugohan o tabemasu.',
-      translation: 'Professor Yamashita isst um 12 Uhr zu Mittag.',
+      japanese: '山下 先生 は 十二時 に 昼ご飯 を 食べます 。',
+      hiragana: 'やました せんせいは じゅうに じに ひるごはんを たべます 。',
+      romaji: 'Yamashita-sensei wa jūni-ji ni hirugohan o tabemasu.',
+      translation: "Professor Yamashita eats lunch at 12 o'clock.",
       keywords: ['sentence', 'lunch', "12 o'clock", 'chapter3'],
       answer: null,
       context: null
     },
     {
-      japanese: '山下先生は4時にコーヒーを飲みます。',
-      hiragana: 'やましたせんせいは4じにコーヒーをのみます。',
-      romaji: 'Yamashita-sensei wa 4-ji ni kōhī o nomimasu.',
-      translation: 'Professor Yamashita trinkt um 4 Uhr Kaffee.',
+      japanese: '山下 先生 は 四時 に コーヒー を 飲みます 。',
+      hiragana: 'やました せんせいは よん じに コーヒーを のみます 。',
+      romaji: 'Yamashita-sensei wa yon-ji ni kōhī o nomimasu.',
+      translation: "Professor Yamashita drinks coffee at 4 o'clock.",
       keywords: ['sentence', 'coffee', "4 o'clock", 'chapter3'],
       answer: null,
       context: null
     },
     {
-      japanese: '山下先生は6時に家に帰ります。',
-      hiragana: 'やましたせんせいは6じにいえにかえります。',
-      romaji: 'Yamashita-sensei wa 6-ji ni ie ni kaerimasu.',
-      translation: 'Professor Yamashita geht um 6 Uhr nach Hause.',
+      japanese: '山下 先生 は 六時 に 家 に 帰ります 。',
+      hiragana: 'やました せんせいは ろく じに いえに かえります 。',
+      romaji: 'Yamashita-sensei wa roku-ji ni ie ni kaerimasu.',
+      translation: "Professor Yamashita goes home at 6 o'clock.",
       keywords: ['sentence', 'go home', "6 o'clock", 'chapter3'],
       answer: null,
       context: null
     },
     {
-      japanese: '山下先生は7時30分に夕ご飯を食べます。',
-      hiragana: 'やましたせんせいは7じ30ぷんにゆうごはんをたべます。',
-      romaji: 'Yamashita-sensei wa 7-ji 30-pun ni yūgohan o tabemasu.',
-      translation: 'Professor Yamashita isst um 7:30 Uhr zu Abend.',
+      japanese: '山下 先生 は 七時 三十分 に 夕ご飯 を 食べます 。',
+      hiragana: 'やました せんせいは しち じ さんじゅっ ぷんに ゆうごはんを たべます 。',
+      romaji: 'Yamashita-sensei wa shichi-ji sanjū-pun ni yūgohan o tabemasu.',
+      translation: 'Professor Yamashita eats dinner at 7:30.',
       keywords: ['sentence', 'dinner', '7:30', 'chapter3'],
       answer: null,
       context: null
     },
     {
-      japanese: '山下先生は11時30分に寝ます。',
-      hiragana: 'やましたせんせいは11じ30ぷんにねます。',
-      romaji: 'Yamashita-sensei wa 11-ji 30-pun ni nemasu.',
-      translation: 'Professor Yamashita geht um 11:30 Uhr ins Bett.',
+      japanese: '山下 先生 は 十一時 三十分 に 寝ます 。',
+      hiragana: 'やました せんせいは じゅういち じ さんじゅっ ぷんに ねます 。',
+      romaji: 'Yamashita-sensei wa jūichi-ji sanjū-pun ni nemasu.',
+      translation: 'Professor Yamashita goes to bed at 11:30.',
       keywords: ['sentence', 'go to bed', '11:30', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '図書館 で 一緒 に 勉強 し ます か ？',
+      hiragana: 'としょかん で いっしょ に べんきょう し ます か ？',
+      romaji: 'Toshokan de issho ni benkyō shimasu ka?',
+      translation: 'Wollen wir zusammen in der Bibliothek lernen?',
+      keywords: ['sentence', 'learning', 'library', 'together'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '一緒 に コーヒー を 飲み ます か ？',
+      hiragana: 'いっしょ に コーヒー を のみ ます か ？',
+      romaji: 'Issho ni kōhī o nomimasu ka?',
+      translation: 'Wollen wir zusammen eine Tasse Kaffee trinken?',
+      keywords: ['sentence', 'coffee', 'together'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '一緒 に テニス を し ます か ？',
+      hiragana: 'いっしょ に テニス を し ます か ？',
+      romaji: 'Issho ni tenisu o shimasu ka?',
+      translation: 'Wollen wir zusammen Tennis spielen gehen?',
+      keywords: ['sentence', 'tennis', 'together'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '一緒 に 映画 を 見 に 行き ます か ？',
+      hiragana: 'いっしょ に えいが を み に いき ます か ？',
+      romaji: 'Issho ni eiga o mi ni ikimasu ka?',
+      translation: 'Wollen wir zusammen ins Kino gehen?',
+      keywords: ['sentence', 'movie', 'cinema', 'together'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '一緒 に マクドナルド に 行き ます か ？',
+      hiragana: 'いっしょ に マクドナルド に いき ます か ？',
+      romaji: 'Issho ni Makudonarudo ni ikimasu ka?',
+      translation: "Wollen wir zusammen zu McDonald's gehen?",
+      keywords: ['sentence', "McDonald's", 'together'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '一緒 に アイスクリーム を 食べ に 行き ます か ？',
+      hiragana: 'いっしょ に アイスクリーム を たべ に いき ます か ？',
+      romaji: 'Issho ni aisukurīmu o tabe ni ikimasu ka?',
+      translation: 'Wollen wir zusammen ein Eis essen gehen?',
+      keywords: ['sentence', 'ice cream', 'together'],
       answer: null,
       context: null
     }
