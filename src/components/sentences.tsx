@@ -42,13 +42,17 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
   }
 
   const checkWord = (): void => {
-    if (randomSentece?.hiragana == answer) {
+    const test1 = randomSentece?.hiragana.replace(/\s/g, '')
+    const test2 = answer.replace(/\s/g, '')
+
+    if (test1 == test2) {
       notifications.show({
         position: 'bottom-right',
         color: 'green',
         title: 'Richtig',
         message: 'Korrekt, gut gemacht 🌟'
       })
+      setAnswer('')
       setRandomSentence()
     } else {
       notifications.show({
@@ -62,13 +66,17 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
 
   return (
     <MantineProvider>
-      <Card style={{ paddingTop: '500px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Card style={{ paddingTop: '700px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Card.Section component={Grid} inheritPadding>
           <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
             <Blockquote color="blue" mt="xl">
               <Text size="sm">{randomSentece?.translation}</Text>
+            </Blockquote>
+          </Grid.Col>
+          <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Blockquote color="blue" mt="xl">
+              <Text size="sm">{randomSentece?.romaji}</Text>
               <Text size="sm">{randomSentece?.hiragana}</Text>
-              <Text size="sm">{answer}</Text>
             </Blockquote>
           </Grid.Col>
           <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>

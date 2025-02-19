@@ -7,12 +7,16 @@ export interface word {
 }
 
 export interface sentence {
+  japanese: string
   hiragana: string
   romaji: string
   translation: string
   keywords: string[]
+  answer: sentence | null
+  context: string | null
 }
 export interface kanji {
+  japanese: string
   kanji: string
   hiragana: string
   meaning: string

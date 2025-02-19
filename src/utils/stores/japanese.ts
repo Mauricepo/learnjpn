@@ -8,1008 +8,692 @@ export interface japaneseStore {
 
 export const useJapaneseStore = create<japaneseStore>((set, get) => ({
   words: [
-    { hiragana: 'あの', romaji: 'ano', definition: 'um...', kanji: '', keywords: ['nothing'] },
     {
-      hiragana: 'いま', romaji: 'ima', definition: 'now', keywords: ['nothing'],
-      kanji: ''
-    },
-    { hiragana: 'えいご', romaji: 'eego', kanji: '英語', definition: 'English (language)', keywords: ['langauge'] },
-    { hiragana: 'がくせい', romaji: 'gakusee', definition: 'student', kanji: '学生', keywords: ['nothing'] },
-    {
-      hiragana: '〜ご', romaji: '..go', definition: 'language', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'こうこう', romaji: 'kookoo', definition: 'high school', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'ごご', romaji: 'gogo', definition: 'P.M', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'ごぜん', romaji: 'gozen', definition: 'A.M', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: '〜さい', romaji: '...sai', definition: '...years old', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: '〜さん', romaji: '...san', definition: 'Mr./Ms....', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: '〜じ', romaji: '...ji', definition: 'o clock', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: '〜じん', romaji: '...jin', definition: 'people', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'せんせい', romaji: 'sensei', definition: 'teacher; Professor', keywords: ['job'],
-      kanji: ''
-    },
-    {
-      hiragana: 'せんもん', romaji: 'senmon', definition: 'major', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'そうです', romaji: 'soo desu', definition: 'Thats right.', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'だいがく', romaji: 'daigaku', definition: 'college; university', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'でんわ', romaji: 'denwa', definition: 'telephone', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'ともだち', romaji: 'tomodachi', definition: 'friend', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'なまえ', romaji: 'namae', definition: 'name', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'なん／なに', romaji: 'nan/nani', definition: 'what', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'にほん', romaji: 'nihon', definition: 'Japan', keywords: ['country'],
-      kanji: ''
-    },
-    {
-      hiragana: '〜ねんせい', romaji: '...nensee', definition: '...year student', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'はい', romaji: 'hai', definition: 'yes', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'はん', romaji: 'han', definition: 'half', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'ばんごう', romaji: 'bangoo', definition: 'number', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'りゅうがくせい', romaji: 'ryuugakusee', definition: 'international student', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'わたし', romaji: 'watashi', definition: 'I', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'アメリカ', romaji: 'amerika', definition: 'U.S.A.', keywords: ['country'],
-      kanji: ''
-    },
-    {
-      hiragana: 'イギリス', romaji: 'igirisu', definition: 'Britain', keywords: ['country'],
-      kanji: ''
-    },
-    {
-      hiragana: 'オーストラリア', romaji: 'Oosutoraria', definition: 'Australia', keywords: ['country'],
-      kanji: ''
-    },
-    {
-      hiragana: 'かんこく', romaji: 'kankoku', definition: 'Korea', keywords: ['country'],
-      kanji: ''
-    },
-    {
-      hiragana: 'スウェーデン', romaji: 'Sueeden', definition: 'Sweden', keywords: ['country'],
-      kanji: ''
-    },
-    {
-      hiragana: 'ちゅうごく', romaji: 'Chuugoku', definition: 'China', keywords: ['country'],
-      kanji: ''
-    },
-    {
-      hiragana: 'かがく', romaji: 'kagaku', definition: 'science', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'アジアけんきゅう', romaji: 'ajiakenkyuu', definition: 'Asian studies', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'こくさいかんけい', romaji: 'kokusaikankei', definition: 'international relations', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'コンピューター', romaji: 'konpyuutaa', definition: 'computer', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'じんるいがく', romaji: 'jinruigaku', definition: 'anthropology', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'せいじ', romaji: 'seeji', definition: 'politics', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'ビジネス', romaji: 'bijinesu', definition: 'business', keywords: ['major'],
-      kanji: ''
-    },
-    {
-      hiragana: 'ぶんがく', romaji: 'bungaku', definition: 'literature', keywords: ['major'],
-      kanji: ''
-    },
-    {
-      hiragana: 'れきし', romaji: 'rekishi', definition: 'history', keywords: ['major'],
-      kanji: ''
+      hiragana: 'えいが',
+      romaji: 'eiga',
+      definition: 'movie',
+      keywords: ['nomen', 'cinema', 'Chapter3'],
+      kanji: '映画'
     },
     {
-      hiragana: 'しごと', romaji: 'shigoto', definition: 'job; work; occupation', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'いしゃ', romaji: 'isha', definition: 'doctor', keywords: ['job'],
-      kanji: ''
-    },
-    {
-      hiragana: 'かいしゃいん', romaji: 'kaishain', definition: 'office worker', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'こうこうせい', romaji: 'kookoosei', definition: 'high school student', keywords: ['nothing'],
-      kanji: ''
-    },
-    {
-      hiragana: 'しゅふ', romaji: 'shufu', definition: 'housewife', keywords: ['nothing'],
-      kanji: ''
+      hiragana: 'おんがく',
+      romaji: 'ongaku',
+      definition: 'music',
+      keywords: ['sound', 'melody', 'Chapter3'],
+      kanji: '音楽'
     },
     {
-      hiragana: 'だいがくいんせい', romaji: 'daigakuinsee', definition: 'graduate student', keywords: ['nothing'],
-      kanji: ''
+      hiragana: 'ざっし',
+      romaji: 'zasshi',
+      definition: 'magazine',
+      keywords: ['publication', 'journal', 'Chapter3'],
+      kanji: '雑誌'
     },
     {
-      hiragana: 'だいがくせい', romaji: 'daigakusee', definition: 'college student', keywords: ['nothing'],
+      hiragana: 'スポーツ',
+      romaji: 'supōtsu',
+      definition: 'sports',
+      keywords: ['athletics', 'exercise', 'Chapter3'],
       kanji: ''
     },
     {
-      hiragana: 'べんごし', romaji: 'bengoshi', definition: 'lawyer', keywords: ['job'],
+      hiragana: 'デート',
+      romaji: 'dēto',
+      definition: 'date (romantic, not calendar)',
+      keywords: ['romantic outing', 'dating', 'Chapter3'],
       kanji: ''
     },
     {
-      hiragana: 'おかあさん', romaji: 'okaasan', definition: 'mother', keywords: ['nothing'],
+      hiragana: 'テニス',
+      romaji: 'tenisu',
+      definition: 'tennis',
+      keywords: ['sport', 'game', 'Chapter3'],
       kanji: ''
     },
     {
-      hiragana: 'おとうさん', romaji: 'otoosan', definition: 'father', keywords: ['nothing'],
+      hiragana: 'テレビ',
+      romaji: 'terebi',
+      definition: 'TV',
+      keywords: ['television', 'broadcast', 'Chapter3'],
       kanji: ''
     },
     {
-      hiragana: 'おねえさん', romaji: 'oneesan', definition: 'older sister', keywords: ['nothing'],
+      hiragana: 'ビデオ',
+      romaji: 'bideo',
+      definition: 'video tape; VCR',
+      keywords: ['recording', 'media', 'Chapter3'],
       kanji: ''
     },
     {
-      hiragana: 'おにいさん', romaji: 'oniisan', definition: 'older brother', keywords: ['nothing'],
-      kanji: ''
+      hiragana: 'あさごはん',
+      romaji: 'asagohan',
+      definition: 'breakfast',
+      keywords: ['morning meal', 'food', 'Chapter3'],
+      kanji: '朝御飯'
     },
     {
-      hiragana: 'いもうと', romaji: 'imooto', definition: 'younger sister', keywords: ['nothing'],
-      kanji: ''
+      hiragana: 'おさけ',
+      romaji: 'osake',
+      definition: 'sake; alcohol',
+      keywords: ['beverage', 'Japanese rice wine', 'Chapter3'],
+      kanji: 'お酒'
     },
     {
-      hiragana: 'おとうと', romaji: 'otooto', definition: 'younger brother', keywords: ['nothing'],
-      kanji: ''
+      hiragana: 'おちゃ',
+      romaji: 'ocha',
+      definition: 'green tea',
+      keywords: ['Japanese tea', 'drink', 'Chapter3'],
+      kanji: 'お茶'
     },
     {
-      hiragana: 'これ', romaji: 'kore', definition: 'this one', keywords: ['demonstrative pronoun'],
+      hiragana: 'コーヒー',
+      romaji: 'kōhī',
+      definition: 'coffee',
+      keywords: ['beverage', 'caffeine', 'Chapter3'],
       kanji: ''
     },
     {
-      hiragana: 'それ', romaji: 'sore', definition: 'that one', keywords: ['demonstrative pronoun'],
-      kanji: ''
+      hiragana: 'ばんごはん',
+      romaji: 'bangohan',
+      definition: 'dinner',
+      keywords: ['evening meal', 'food', 'Chapter3'],
+      kanji: '晩御飯'
     },
     {
-      hiragana: 'あれ', romaji: 'are', definition: 'that one (over there)', keywords: ['demonstrative pronoun'],
+      hiragana: 'ハンバーガー',
+      romaji: 'hanbāgā',
+      definition: 'hamburger',
+      keywords: ['fast food', 'burger', 'Chapter3'],
       kanji: ''
     },
     {
-      hiragana: 'どれ', romaji: 'dore', definition: 'which one', keywords: ['interrogative pronoun'],
-      kanji: ''
+      hiragana: 'ひるごはん',
+      romaji: 'hirugohan',
+      definition: 'lunch',
+      keywords: ['midday meal', 'food', 'Chapter3'],
+      kanji: '昼御飯'
     },
     {
-      hiragana: 'この', romaji: 'kono', definition: 'this ...', keywords: ['demonstrative adjective'],
-      kanji: ''
+      hiragana: 'みず',
+      romaji: 'mizu',
+      definition: 'water',
+      keywords: ['drink', 'liquid', 'Chapter3'],
+      kanji: '水'
     },
     {
-      hiragana: 'その', romaji: 'sono', definition: 'that ...', keywords: ['demonstrative adjective'],
-      kanji: ''
+      hiragana: 'いえ',
+      romaji: 'ie',
+      definition: 'home; house',
+      keywords: ['building', 'residence', 'Chapter3'],
+      kanji: '家'
     },
     {
-      hiragana: 'あの', romaji: 'ano', definition: 'that ... (over there)', keywords: ['demonstrative adjective'],
-      kanji: ''
+      hiragana: 'うち',
+      romaji: 'uchi',
+      definition: 'home; house; my place',
+      keywords: ['residence', 'inside', 'Chapter3'],
+      kanji: '家'
     },
     {
-      hiragana: 'どの', romaji: 'dono', definition: 'which ...', keywords: ['interrogative adjective'],
+      hiragana: 'LL（エルエル）',
+      romaji: 'erueru',
+      definition: 'language lab',
+      keywords: ['study', 'school', 'Chapter3'],
       kanji: ''
     },
     {
-      hiragana: 'あそこ', romaji: 'asoko', definition: 'over there', keywords: ['adverb of place'],
-      kanji: ''
+      hiragana: 'がっこう',
+      romaji: 'gakkō',
+      definition: 'school',
+      keywords: ['education', 'learning', 'Chapter3'],
+      kanji: '学校'
     },
     {
-      hiragana: 'どこ', romaji: 'doko', definition: 'where', keywords: ['interrogative adverb'],
-      kanji: ''
+      hiragana: 'あさ',
+      romaji: 'asa',
+      definition: 'morning',
+      keywords: ['early day', 'time', 'Chapter3'],
+      kanji: '朝'
     },
     {
-      hiragana: 'だれ', romaji: 'dare', definition: 'who', keywords: ['interrogative pronoun'],
+      hiragana: 'あした',
+      romaji: 'ashita',
+      definition: 'tomorrow',
+      keywords: ['future', 'next day', 'Chapter3'],
       kanji: ''
     },
     {
-      hiragana: 'おいしい', romaji: 'oishii', definition: 'delicious', keywords: ['adjective'],
+      hiragana: 'いつ',
+      romaji: 'itsu',
+      definition: 'when',
+      keywords: ['question word', 'time', 'Chapter3'],
       kanji: ''
     },
-    { hiragana: 'さかな', kanji: '魚', romaji: 'sakana', definition: 'fish', keywords: ['noun'] },
     {
-      hiragana: 'とんかつ', romaji: 'tonkatsu', definition: 'pork cutlet', keywords: ['noun', 'food'],
-      kanji: ''
+      hiragana: 'きょう',
+      romaji: 'kyō',
+      definition: 'today',
+      keywords: ['present day', 'date', 'Chapter3'],
+      kanji: '今日'
     },
-    { hiragana: 'にく', kanji: '肉', romaji: 'niku', definition: 'meat', keywords: ['noun'] },
     {
-      hiragana: 'メニュー', romaji: 'menyuu', definition: 'menu', keywords: ['noun'],
-      kanji: ''
-    },
-    { hiragana: 'やさい', kanji: '野菜', romaji: 'yasai', definition: 'vegetable', keywords: ['noun'] },
-    { hiragana: 'えんぴつ', kanji: '鉛筆', romaji: 'enpitsu', definition: 'pencil', keywords: ['noun'] },
-    { hiragana: 'かさ', kanji: '傘', romaji: 'kasa', definition: 'umbrella', keywords: ['noun'] },
-    { hiragana: 'かばん', kanji: '鞄', romaji: 'kaban', definition: 'bag', keywords: ['noun'] },
-    { hiragana: 'くつ', kanji: '靴', romaji: 'kutsu', definition: 'shoes', keywords: ['noun'] },
-    { hiragana: 'さいふ', kanji: '財布', romaji: 'saifu', definition: 'wallet', keywords: ['noun'] },
-    {
-      hiragana: 'ジーンズ', romaji: 'jiinzu', definition: 'jeans', keywords: ['noun', 'clothing'],
+      hiragana: '〜ごろ',
+      romaji: '~goro',
+      definition: 'at about',
+      keywords: ['approximate time', 'Chapter3'],
       kanji: ''
     },
-    { hiragana: 'じしょ', kanji: '辞書', romaji: 'jisho', definition: 'dictionary', keywords: ['noun'] },
-    { hiragana: 'じてんしゃ', kanji: '自転車', romaji: 'jitensha', definition: 'bicycle', keywords: ['noun'] },
-    { hiragana: 'しんぶん', kanji: '新聞', romaji: 'shinbun', definition: 'newspaper', keywords: ['noun'] },
     {
-      hiragana: 'テープ', romaji: 'teepu', definition: 'tape', keywords: ['noun'],
-      kanji: ''
+      hiragana: 'こんばん',
+      romaji: 'konban',
+      definition: 'tonight',
+      keywords: ['evening', 'this night', 'Chapter3'],
+      kanji: '今晩'
     },
-    { hiragana: 'とけい', kanji: '時計', romaji: 'tokee', definition: 'watch; clock', keywords: ['noun'] },
     {
-      hiragana: 'トレーナー', romaji: 'toreenaa', definition: 'sweat shirt', keywords: ['noun', 'clothing'],
-      kanji: ''
+      hiragana: 'しゅうまつ',
+      romaji: 'shūmatsu',
+      definition: 'weekend',
+      keywords: ['Saturday and Sunday', 'free time', 'Chapter3'],
+      kanji: '週末'
     },
     {
-      hiragana: 'ノート', romaji: 'nooto', definition: 'notebook', keywords: ['noun'],
-      kanji: ''
+      hiragana: 'どようび',
+      romaji: 'doyōbi',
+      definition: 'Saturday',
+      keywords: ['weekend', 'day of the week', 'Chapter3'],
+      kanji: '土曜日'
     },
     {
-      hiragana: 'ペン', romaji: 'pen', definition: 'pen', keywords: ['noun'],
-      kanji: ''
+      hiragana: 'にちようび',
+      romaji: 'nichiyōbi',
+      definition: 'Sunday',
+      keywords: ['weekend', 'holiday', 'Chapter3'],
+      kanji: '日曜日'
     },
-    { hiragana: 'ぼうし', kanji: '帽子', romaji: 'booshi', definition: 'hat; cap', keywords: ['noun'] },
-    { hiragana: 'ほん', kanji: '本', romaji: 'hon', definition: 'book', keywords: ['noun'] },
-    { hiragana: 'おてあらい', kanji: 'お手洗い', romaji: 'otearai', definition: 'restroom', keywords: ['noun'] },
-    { hiragana: 'きっさてん', kanji: '喫茶店', romaji: 'kissaten', definition: 'cafe', keywords: ['noun'] },
-    { hiragana: 'ぎんこう', kanji: '銀行', romaji: 'ginkoo', definition: 'bank', keywords: ['noun'] },
-    { hiragana: 'としょかん', kanji: '図書館', romaji: 'toshokan', definition: 'library', keywords: ['noun'] },
-    { hiragana: 'ゆうびんきょく', kanji: '郵便局', romaji: 'yuubinkyoku', definition: 'post office', keywords: ['noun'] },
-    { hiragana: 'けいざい', kanji: '経済', romaji: 'keezai', definition: 'economics', keywords: ['noun'] },
-    {
-      hiragana: 'いくら', romaji: 'ikura', definition: 'how much', keywords: ['interrogative'],
-      kanji: ''
-    },
-    { hiragana: '〜えん', kanji: '〜円', romaji: '...en', definition: '...yen', keywords: ['currency'] },
-    { hiragana: 'たかい', kanji: '高い', romaji: 'takai', definition: 'expensive', keywords: ['adjective'] },
     {
-      hiragana: 'いらっしゃいませ', romaji: 'irasshaimase', definition: 'Welcome (to our store)', keywords: ['greeting'],
-      kanji: ''
+      hiragana: 'まいにち',
+      romaji: 'mainichi',
+      definition: 'every day',
+      keywords: ['daily', 'routine', 'Chapter3'],
+      kanji: '毎日'
     },
     {
-      hiragana: '（〜を）おねがいします', romaji: '(...o) onegaishimasu', definition: '..., please.', keywords: ['polite request'],
-      kanji: ''
+      hiragana: 'まいばん',
+      romaji: 'maiban',
+      definition: 'every night',
+      keywords: ['nightly', 'routine', 'Chapter3'],
+      kanji: '毎晩'
     },
     {
-      hiragana: '（〜を）ください', romaji: '(...o) kudasai', definition: 'Please give me...', keywords: ['polite request'],
-      kanji: ''
+      hiragana: 'いく',
+      romaji: 'iku',
+      definition: 'to go',
+      keywords: ['movement', 'travel', 'Chapter3'],
+      kanji: '行く'
     },
     {
-      hiragana: 'じゃあ', romaji: 'jaa', definition: 'then...; if that is the case,...', keywords: ['conjunction'],
-      kanji: ''
+      hiragana: 'かえる',
+      romaji: 'kaeru',
+      definition: 'to go back; to return',
+      keywords: ['homecoming', 'returning', 'Chapter3'],
+      kanji: '帰る'
     },
     {
-      hiragana: '（〜を）どうぞ', romaji: '(...o) doozo', definition: 'Here it is.', keywords: ['offering'],
-      kanji: ''
+      hiragana: 'きく',
+      romaji: 'kiku',
+      definition: 'to listen; to hear',
+      keywords: ['sound', 'music', 'Chapter3'],
+      kanji: '聞く'
     },
     {
-      hiragana: 'どうも', romaji: 'doomo', definition: 'Thank you.', keywords: ['expression of gratitude'],
-      kanji: ''
+      hiragana: 'のむ',
+      romaji: 'nomu',
+      definition: 'to drink',
+      keywords: ['beverage', 'consume', 'Chapter3'],
+      kanji: '飲む'
     }
   ],
   sentences: [
     {
-      hiragana: 'あの ひと は せんせい です。',
-      romaji: 'Ano hito wa sensei desu.',
-      translation: 'Diese Person ist eine Lehrerin / ein Lehrer.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'やまだ さん は がくせい です。',
-      romaji: 'Yamada-san wa gakusei desu.',
-      translation: 'Herr/Frau Yamada ist ein/e Schüler/in.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'たなか さん は にほんじん です。',
-      romaji: 'Tanaka-san wa Nihonjin desu.',
-      translation: 'Herr/Frau Tanaka ist Japaner/in.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'わたし は アメリカじん です。',
-      romaji: 'Watashi wa Amerika-jin desu.',
-      translation: 'Ich bin Amerikaner/in.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'みちこ さん は だいがくせい です。',
-      romaji: 'Michiko-san wa daigakusei desu.',
-      translation: 'Michiko ist eine Universitätsstudentin.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'スミス さん は イギリスじん です。',
-      romaji: 'Sumisu-san wa Igirisujin desu.',
-      translation: 'Herr/Frau Smith ist Brite/Britin.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'さとう さん は にほんご の せんせい です。',
-      romaji: 'Satou-san wa Nihongo no sensei desu.',
-      translation: 'Herr/Frau Satou ist Japanischlehrer/in.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'メアリー さん は じゅうきゅうさい です。',
-      romaji: 'Mearī-san wa jūkyūsai desu.',
-      translation: 'Mary ist 19 Jahre alt.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'やまだ せんせい は よんじゅっさい です。',
-      romaji: 'Yamada-sensei wa yonjussai desu.',
-      translation: 'Lehrer Yamada ist 40 Jahre alt.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'たけし さん は とうきょう だいがく の がくせい です。',
-      romaji: 'Takeshi-san wa Tōkyō Daigaku no gakusei desu.',
-      translation: 'Takeshi ist Student an der Universität Tokio.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'あの ひと は だれ です か。',
-      romaji: 'Ano hito wa dare desu ka?',
-      translation: 'Wer ist diese Person?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'やまだ さん は せんせい です か。',
-      romaji: 'Yamada-san wa sensei desu ka?',
-      translation: 'Ist Herr/Frau Yamada Lehrer/in?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'たなか さん は がくせい です か。',
-      romaji: 'Tanaka-san wa gakusei desu ka?',
-      translation: 'Ist Herr/Frau Tanaka ein/e Schüler/in?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'あなた は にほんじん です か。',
-      romaji: 'Anata wa Nihonjin desu ka?',
-      translation: 'Bist du Japaner/in?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'みちこ さん は なんさい です か。',
-      romaji: 'Michiko-san wa nansai desu ka?',
-      translation: 'Wie alt ist Michiko?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'スミス さん は どこ の しゅっしん です か。',
-      romaji: 'Sumisu-san wa doko no shusshin desu ka?',
-      translation: 'Woher kommt Herr/Frau Smith?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'さとう さん の しごと は なん です か。',
-      romaji: 'Satou-san no shigoto wa nan desu ka?',
-      translation: 'Was ist Herr/Frau Satous Beruf?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'メアリー さん は だいがくせい です か。',
-      romaji: 'Mearī-san wa daigakusei desu ka?',
-      translation: 'Ist Mary Universitätsstudentin?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'やまだ せんせい は なんさい です か。',
-      romaji: 'Yamada-sensei wa nansai desu ka?',
-      translation: 'Wie alt ist Lehrer Yamada?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'たけし さん は どこ の だいがく の がくせい です か。',
-      romaji: 'Takeshi-san wa doko no daigaku no gakusei desu ka?',
-      translation: 'An welcher Universität studiert Takeshi?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'これは にほんご の ほん です。',
-      romaji: 'Kore wa Nihongo no hon desu.',
-      translation: 'Das ist ein Japanischbuch.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'たなか さん は とうきょう だいがく の がくせい です。',
-      romaji: 'Tanaka-san wa Tōkyō Daigaku no gakusei desu.',
-      translation: 'Herr/Frau Tanaka ist ein/e Student/in der Universität Tokio.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'スミス さん は ABC がいしゃ の しゃいん です。',
-      romaji: 'Sumisu-san wa ABC gaisha no shain desu.',
-      translation: 'Herr/Frau Smith ist ein/e Angestellte/r der Firma ABC.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'これは わたし の じしょ です。',
-      romaji: 'Kore wa watashi no jisho desu.',
-      translation: 'Das ist mein Wörterbuch.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'やまだ せんせい は わたし の にほんご の せんせい です。',
-      romaji: 'Yamada-sensei wa watashi no Nihongo no sensei desu.',
-      translation: 'Lehrer Yamada ist mein Japanischlehrer.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'これは たけし さん の かばん です か。',
-      romaji: 'Kore wa Takeshi-san no kaban desu ka?',
-      translation: 'Ist das die Tasche von Takeshi?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'みちこ さん は にほん の だいがくせい です。',
-      romaji: 'Michiko-san wa Nihon no daigakusei desu.',
-      translation: 'Michiko ist eine Universitätsstudentin aus Japan.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'これは たなか さん の でんわ ばんごう です か。',
-      romaji: 'Kore wa Tanaka-san no denwa bangō desu ka?',
-      translation: 'Ist das die Telefonnummer von Herr/Frau Tanaka?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'やまだ さん は わたし の ともだち です。',
-      romaji: 'Yamada-san wa watashi no tomodachi desu.',
-      translation: 'Herr/Frau Yamada ist mein/e Freund/in.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'これは たけし さん の いえ です か。',
-      romaji: 'Kore wa Takeshi-san no ie desu ka?',
-      translation: 'Ist das das Haus von Takeshi?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'わたし は がくせい です。',
-      romaji: 'Watashi wa gakusei desu.',
-      translation: 'Ich bin ein/e Schüler/in.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'やまだ さん は せんせい です か。',
-      romaji: 'Yamada-san wa sensei desu ka?',
-      translation: 'Ist Herr/Frau Yamada Lehrer/in?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'これは なん です か。',
-      romaji: 'Kore wa nan desu ka?',
-      translation: 'Was ist das?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'いま は ごぜん じゅうじ です。',
-      romaji: 'Ima wa gozen jūji desu.',
-      translation: 'Es ist jetzt 10 Uhr morgens.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'いま なんじ です か。',
-      romaji: 'Ima nanji desu ka?',
-      translation: 'Wie spät ist es jetzt?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'スミス さん の でんわ ばんごう は なん です か。',
-      romaji: 'Sumisu-san no denwa bangō wa nan desu ka?',
-      translation: 'Wie ist Herr/Frau Smiths Telefonnummer?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'わたし の でんわ ばんごう は いち に さん の よん ご ろく なな です。',
-      romaji: 'Watashi no denwa bangō wa ichi ni san no yon go roku nana desu.',
-      translation: 'Meine Telefonnummer ist 123-4567.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'メアリー さん は なんさい です か。',
-      romaji: 'Mearī-san wa nansai desu ka?',
-      translation: 'Wie alt ist Mary?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'わたし は にじゅういっさい です。',
-      romaji: 'Watashi wa nijūissai desu.',
-      translation: 'Ich bin 21 Jahre alt.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'これは だれ の ペン です か。',
-      romaji: 'Kore wa dare no pen desu ka?',
-      translation: 'Wessen Stift ist das?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'それ は わたし の ペン です。',
-      romaji: 'Sore wa watashi no pen desu.',
-      translation: 'Das ist mein Stift.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'たなか さん は どこ の だいがく の がくせい です か。',
-      romaji: 'Tanaka-san wa doko no daigaku no gakusei desu ka?',
-      translation: 'An welcher Universität studiert Herr/Frau Tanaka?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'たけし さん は いちねんせい です。',
-      romaji: 'Takeshi-san wa ichinensei desu.',
-      translation: 'Takeshi ist ein Erstsemester.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'にほんご の せんせい は だれ です か。',
-      romaji: 'Nihongo no sensei wa dare desu ka?',
-      translation: 'Wer ist der Japanischlehrer?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'その くるま は いくら です か。',
-      romaji: 'Sono kuruma wa ikura desu ka?',
-      translation: 'Wie viel kostet dieses Auto?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'この かばん は さんぜん ごひゃく えん です。',
-      romaji: 'Kono kaban wa sanzen gohyaku en desu.',
-      translation: 'Diese Tasche kostet 3500 Yen.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'やまだ さん は にほんじん です か。',
-      romaji: 'Yamada-san wa Nihonjin desu ka?',
-      translation: 'Ist Herr/Frau Yamada Japaner/in?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'はい、にほんじん です。',
-      romaji: 'Hai, Nihonjin desu.',
-      translation: 'Ja, ich bin Japaner/in.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'いいえ、ちがいます。',
-      romaji: 'Iie, chigaimasu.',
-      translation: 'Nein, das ist nicht richtig.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'おはようございます。',
-      romaji: 'Ohayō gozaimasu.',
-      translation: 'Guten Morgen (höflich).',
-      keywords: ['greeting', 'chapter1']
-    },
-    {
-      hiragana: 'こんにちは。',
-      romaji: 'Konnichiwa.',
-      translation: 'Guten Tag.',
-      keywords: ['greeting', 'chapter1']
-    },
-    {
-      hiragana: 'こんばんは。',
-      romaji: 'Konbanwa.',
-      translation: 'Guten Abend.',
-      keywords: ['greeting', 'chapter1']
-    },
-    {
-      hiragana: 'さようなら。',
-      romaji: 'Sayōnara.',
-      translation: 'Auf Wiedersehen.',
-      keywords: ['greeting', 'chapter1']
-    },
-    {
-      hiragana: 'すみません。',
-      romaji: 'Sumimasen.',
-      translation: 'Entschuldigung.',
-      keywords: ['politeness', 'chapter1']
-    },
-    {
-      hiragana: 'いくらですか？',
-      romaji: 'Ikura desu ka?',
-      translation: 'Wie viel kostet das?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'これは いくらですか？',
-      romaji: 'Kore wa ikura desu ka?',
-      translation: 'Wie viel kostet das hier?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'どれが あなたの ほん ですか？',
-      romaji: 'Dore ga anata no hon desu ka?',
-      translation: 'Welches ist dein Buch?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'それは わたしの です。',
-      romaji: 'Sore wa watashi no desu.',
-      translation: 'Das gehört mir.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'あれは たなかさんの さいふ ですか？',
-      romaji: 'Are wa Tanaka-san no saifu desu ka?',
-      translation: 'Ist das dort drüben Tanakas Portemonnaie?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'はい、そうです。',
-      romaji: 'Hai, sō desu.',
-      translation: 'Ja, das ist richtig.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'いいえ、ちがいます。',
-      romaji: 'Iie, chigaimasu.',
-      translation: 'Nein, das ist nicht richtig.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'たなかさん も がくせい です。',
-      romaji: 'Tanaka-san mo gakusei desu.',
-      translation: 'Tanaka ist auch Schüler/in.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'あなたの でんわばんごう は なんですか？',
-      romaji: 'Anata no denwa bangō wa nan desu ka?',
-      translation: 'Wie ist deine Telefonnummer?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'わたしの でんわばんごう は 123-4567 です。',
-      romaji: 'Watashi no denwa bangō wa ichi ni san no yon go roku nana desu.',
-      translation: 'Meine Telefonnummer ist 123-4567.',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'あなたは がくせい ですか？ せんせい ですか？',
-      romaji: 'Anata wa gakusei desu ka? Sensei desu ka?',
-      translation: 'Bist du Schüler/in oder Lehrer/in?',
-      keywords: ['question', 'chapter1']
-    },
-    {
-      hiragana: 'これは おいしいですね。',
-      romaji: 'Kore wa oishii desu ne.',
-      translation: 'Das ist lecker, nicht wahr?',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'このえいがは たのしいですよ！',
-      romaji: 'Kono eiga wa tanoshii desu yo!',
-      translation: 'Dieser Film ist wirklich unterhaltsam!',
-      keywords: ['sentence', 'chapter1']
-    },
-    {
-      hiragana: 'これは なんですか？',
-      romaji: 'Kore wa nan desu ka?',
-      translation: 'Was ist das hier?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'それは とけい です。',
-      romaji: 'Sore wa tokei desu.',
-      translation: 'Das ist eine Uhr.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'あれは だれの かばん ですか？',
-      romaji: 'Are wa dare no kaban desu ka?',
-      translation: 'Wem gehört diese Tasche dort drüben?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'これは わたしの さいふ です。',
-      romaji: 'Kore wa watashi no saifu desu.',
-      translation: 'Das ist mein Portemonnaie.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'この ほん は いくら ですか？',
-      romaji: 'Kono hon wa ikura desu ka?',
-      translation: 'Wie viel kostet dieses Buch?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'それは せんえん です。',
-      romaji: 'Sore wa sen en desu.',
-      translation: 'Das kostet 1000 Yen.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'メニュー を ください。',
-      romaji: 'Menyū o kudasai.',
-      translation: 'Bitte geben Sie mir das Menü.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'すみません、ハンバーガー は いくら ですか？',
-      romaji: 'Sumimasen, hanbāgā wa ikura desu ka?',
-      translation: 'Entschuldigung, wie viel kostet der Hamburger?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'その コーヒー を おねがいします。',
-      romaji: 'Sono kōhī o onegai shimasu.',
-      translation: 'Diesen Kaffee bitte.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'じゃあ、その ほん を ください。',
-      romaji: 'Jā, sono hon o kudasai.',
-      translation: 'Dann nehme ich dieses Buch.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'どの くつ が あなたの ですか？',
-      romaji: 'Dono kutsu ga anata no desu ka?',
-      translation: 'Welche Schuhe gehören dir?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'あの とけい は わたしの です。',
-      romaji: 'Ano tokei wa watashi no desu.',
-      translation: 'Diese Uhr dort drüben gehört mir.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'たけしさん の さいふ は どれ ですか？',
-      romaji: 'Takeshi-san no saifu wa dore desu ka?',
-      translation: 'Welches ist Takeshis Portemonnaie?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'これは にほんの くるま です。',
-      romaji: 'Kore wa Nihon no kuruma desu.',
-      translation: 'Das ist ein Auto aus Japan.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'どこで ひるごはん を たべますか？',
-      romaji: 'Doko de hirugohan o tabemasu ka?',
-      translation: 'Wo isst du zu Mittag?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'わたしは きっさてん で コーヒー を のみます。',
-      romaji: 'Watashi wa kissaten de kōhī o nomimasu.',
-      translation: 'Ich trinke Kaffee im Café.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'すみません、トイレ は どこ ですか？',
-      romaji: 'Sumimasen, toire wa doko desu ka?',
-      translation: 'Entschuldigung, wo ist die Toilette?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'デパート は あそこ です。',
-      romaji: 'Depāto wa asoko desu.',
-      translation: 'Das Kaufhaus ist dort drüben.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'きょう は なんようび ですか？',
-      romaji: 'Kyō wa nanyōbi desu ka?',
-      translation: 'Welcher Wochentag ist heute?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'きょう は げつようび です。',
-      romaji: 'Kyō wa getsuyōbi desu.',
-      translation: 'Heute ist Montag.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'これは たなかさん の ほん ですか？',
-      romaji: 'Kore wa Tanaka-san no hon desu ka?',
-      translation: 'Gehört dieses Buch Tanaka?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'いいえ、ちがいます。それは わたしの ほん です。',
-      romaji: 'Iie, chigaimasu. Sore wa watashi no hon desu.',
-      translation: 'Nein, das ist nicht richtig. Das ist mein Buch.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'じゃあ、どの ほん が たなかさん の ですか？',
-      romaji: 'Jā, dono hon ga Tanaka-san no desu ka?',
-      translation: 'Dann, welches Buch gehört Tanaka?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'たなかさん の ほん は あの ほん です。',
-      romaji: 'Tanaka-san no hon wa ano hon desu.',
-      translation: 'Tanakas Buch ist das Buch dort drüben.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'これは にく じゃない です。',
-      romaji: 'Kore wa niku janai desu.',
-      translation: 'Das ist kein Fleisch.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'すみません、それは さかな ですか？',
-      romaji: 'Sumimasen, sore wa sakana desu ka?',
-      translation: 'Entschuldigung, ist das Fisch?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'いいえ、やさい です。',
-      romaji: 'Iie, yasai desu.',
-      translation: 'Nein, das ist Gemüse.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'この ていしょく は なんですか？',
-      romaji: 'Kono teishoku wa nan desu ka?',
-      translation: 'Was ist dieses Menü?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'これは さかな の ていしょく です。',
-      romaji: 'Kore wa sakana no teishoku desu.',
-      translation: 'Das ist das Fisch-Menü.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'すみません、どの カレー が いちばん おいしい ですか？',
-      romaji: 'Sumimasen, dono karē ga ichiban oishii desu ka?',
-      translation: 'Entschuldigung, welches Curry ist am leckersten?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'その カレー が いちばん おいしい です。',
-      romaji: 'Sono karē ga ichiban oishii desu.',
-      translation: 'Dieses Curry ist am leckersten.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'この さかな は いくら ですか？',
-      romaji: 'Kono sakana wa ikura desu ka?',
-      translation: 'Wie viel kostet dieser Fisch?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'あの コーヒー は いくら ですか？',
-      romaji: 'Ano kōhī wa ikura desu ka?',
-      translation: 'Wie viel kostet dieser Kaffee dort drüben?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'わたし の いえ は どこ ですか？',
-      romaji: 'Watashi no ie wa doko desu ka?',
-      translation: 'Wo ist mein Haus?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'その くつ は たかい です。',
-      romaji: 'Sono kutsu wa takai desu.',
-      translation: 'Diese Schuhe sind teuer.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'あの パン は やすい です。',
-      romaji: 'Ano pan wa yasui desu.',
-      translation: 'Dieses Brot dort drüben ist billig.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'この しゃしん は たかい ですか？',
-      romaji: 'Kono shashin wa takai desu ka?',
-      translation: 'Ist dieses Foto teuer?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'すみません、これは なんの ざっし ですか？',
-      romaji: 'Sumimasen, kore wa nan no zasshi desu ka?',
-      translation: 'Entschuldigung, was für eine Zeitschrift ist das?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'これは にほん の ザッシ です。',
-      romaji: 'Kore wa Nihon no zasshi desu.',
-      translation: 'Das ist eine japanische Zeitschrift.',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'すみません、いま なんじ ですか？',
-      romaji: 'Sumimasen, ima nanji desu ka?',
-      translation: 'Entschuldigung, wie spät ist es jetzt?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'いま ごご さんじ です。',
-      romaji: 'Ima gogo sanji desu.',
-      translation: 'Es ist jetzt 15:00 Uhr (nachmittags).',
-      keywords: ['sentence', 'chapter2']
-    },
-    {
-      hiragana: 'レストラン は なんじ から なんじ まで ですか？',
-      romaji: 'Resutoran wa nanji kara nanji made desu ka?',
-      translation: 'Von wann bis wann ist das Restaurant geöffnet?',
-      keywords: ['question', 'chapter2']
-    },
-    {
-      hiragana: 'レストラン は ごぜん じゅうじ から ごご くじ まで です。',
-      romaji: 'Resutoran wa gozen jūji kara gogo kuji made desu.',
-      translation: 'Das Restaurant ist von 10 Uhr morgens bis 9 Uhr abends geöffnet.',
-      keywords: ['sentence', 'chapter2']
+      japanese: '私 は よく テレビ を 見 ます 。',
+      hiragana: 'わたし は よく テレビ を み ます 。',
+      romaji: 'Watashi wa yoku terebi o mimasu.',
+      translation: 'Ich schaue oft fern.',
+      keywords: ['sentence', 'chapter3', 'habitual actions'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: 'メアリー さん は 時々 朝ご飯 を 食べ ませ ん 。',
+      hiragana: 'メアリー さん は ときどき あさごはん を たべ ませ ん 。',
+      romaji: 'Mary-san wa tokidoki asagohan o tabemasen.',
+      translation: 'Mary isst manchmal kein Frühstück.',
+      keywords: ['sentence', 'chapter3', 'habitual actions'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 明日 京都 に 行き ます 。',
+      hiragana: 'わたし は あした きょうと に いき ます 。',
+      romaji: 'Watashi wa ashita Kyōto ni ikimasu.',
+      translation: 'Ich werde morgen nach Kyoto gehen.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: 'そら さん は 今日 家 に 帰り ませ ん 。',
+      hiragana: 'そら さん は きょう いえ に かえり ませ ん 。',
+      romaji: 'Sora-san wa kyō ie ni kaerimasen.',
+      translation: 'Sora wird heute nicht nach Hause zurückkehren.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は コーヒー を 飲み ます 。',
+      hiragana: 'わたし は コーヒー を のみ ます 。',
+      romaji: 'Watashi wa kōhī o nomimasu.',
+      translation: 'Ich trinke Kaffee.',
+      keywords: ['sentence', 'chapter3', 'habitual actions'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 音楽 を 聴き ます 。',
+      hiragana: 'わたし は おんがく を きき ます 。',
+      romaji: 'Watashi wa ongaku o kikimasu.',
+      translation: 'Ich höre Musik.',
+      keywords: ['sentence', 'chapter3', 'habitual actions'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は テレビ を 見 ます 。',
+      hiragana: 'わたし は テレビ を み ます 。',
+      romaji: 'Watashi wa terebi o mimasu.',
+      translation: 'Ich schaue fern.',
+      keywords: ['sentence', 'chapter3', 'habitual actions'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 図書館 で 本 を 読み ます 。',
+      hiragana: 'わたし は としょかん で ほん を よみ ます 。',
+      romaji: 'Watashi wa toshokan de hon o yomimasu.',
+      translation: 'Ich werde in der Bibliothek Bücher lesen.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 家 で 昼ご飯 を 食べ ます 。',
+      hiragana: 'わたし は いえ で ひるごはん を たべ ます 。',
+      romaji: 'Watashi wa ie de hirugohan o tabemasu.',
+      translation: 'Ich werde zu Hause zu Mittag essen.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 今日 学校 に 行き ませ ん 。',
+      hiragana: 'わたし は きょう がっこう に いき ませ ん 。',
+      romaji: 'Watashi wa kyō gakkō ni ikimasen.',
+      translation: 'Ich werde heute nicht zur Schule gehen.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 家 に 帰り ます 。',
+      hiragana: 'わたし は いえ に かえり ます 。',
+      romaji: 'Watashi wa ie ni kaerimasu.',
+      translation: 'Ich werde nach Hause zurückkehren.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 日曜日 に 京都 に 行き ます 。',
+      hiragana: 'わたし は にちようび に きょうと に いき ます 。',
+      romaji: 'Watashi wa nichiyōbi ni Kyōto ni ikimasu.',
+      translation: 'Ich werde am Sonntag nach Kyoto gehen.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 11時 に 寝 ます 。',
+      hiragana: 'わたし は じゅういちじ に ね ます 。',
+      romaji: 'Watashi wa jūichiji ni nemasu.',
+      translation: 'Ich werde um 11 Uhr ins Bett gehen.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 11時 ごろ に 寝 ます 。',
+      hiragana: 'わたし は じゅういちじ ごろ に ね ます 。',
+      romaji: 'Watashi wa jūichiji goro ni nemasu.',
+      translation: 'Ich werde gegen 11 Uhr ins Bett gehen.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 日曜日 に 行き ます 。',
+      hiragana: 'わたし は にちようび に いき ます 。',
+      romaji: 'Watashi wa nichiyōbi ni ikimasu.',
+      translation: 'Ich werde am Sonntag gehen.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 10時45分 に 起き ます 。',
+      hiragana: 'わたし は じゅうじよんじゅうごふん に おき ます 。',
+      romaji: 'Watashi wa jūji yonjūgo fun ni okimasu.',
+      translation: 'Ich stehe um 10:45 Uhr auf.',
+      keywords: ['sentence', 'chapter3', 'habitual actions'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 9月 に 帰り ます 。',
+      hiragana: 'わたし は くがつ に かえり ます 。',
+      romaji: 'Watashi wa kugatsu ni kaerimasu.',
+      translation: 'Ich werde im September zurückkehren.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 明日 来 ます 。',
+      hiragana: 'わたし は あした き ます 。',
+      romaji: 'Watashi wa ashita kimasu.',
+      translation: 'Ich werde morgen kommen.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は jeden Abend テレビ を 見 ます 。',
+      hiragana: 'わたし は まいばん テレビ を み ます 。',
+      romaji: 'Watashi wa maiban terebi o mimasu.',
+      translation: 'Ich schaue jeden Abend fern.',
+      keywords: ['sentence', 'chapter3', 'habitual actions'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は いつ 行き ます か ？',
+      hiragana: 'わたし は いつ いき ます か ？',
+      romaji: 'Watashi wa itsu ikimasu ka?',
+      translation: 'Wann werde ich gehen?',
+      keywords: ['sentence', 'chapter3', 'question'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は Morgen ein Buch lese 。',
+      hiragana: 'わたし は あした ほん を よみ ます 。',
+      romaji: 'Watashi wa ashita hon o yomimasu.',
+      translation: 'Ich werde morgen ein Buch lesen.',
+      keywords: ['sentence', 'chapter3', 'future action'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は Wochenende Was werde ich machen ？',
+      hiragana: 'わたし は しゅうまつ なに を し ます か ？',
+      romaji: 'Watashi wa shūmatsu nani o shimasu ka?',
+      translation: 'Was werde ich am Wochenende machen?',
+      keywords: ['sentence', 'chapter3', 'question'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 時々 図書館 に 行き ます 。',
+      hiragana: 'わたし は ときどき としょかん に いき ます 。',
+      romaji: 'Watashi wa tokidoki toshokan ni ikimasu.',
+      translation: 'Ich gehe manchmal in eine Bibliothek.',
+      keywords: ['sentence', 'chapter3', 'habitual actions'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は 全然 テレビ を 見 ませ ん 。',
+      hiragana: 'わたし は ぜんぜん テレビ を み ませ ん 。',
+      romaji: 'Watashi wa zenzen terebi o mimasen.',
+      translation: 'Ich schaue überhaupt kein Fernsehen.',
+      keywords: ['sentence', 'chapter3', 'habitual actions'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '私 は あまり テレビ を 見 ませ ん 。',
+      hiragana: 'わたし は あまり テレビ を み ませ ん 。',
+      romaji: 'Watashi wa amari terebi o mimasen.',
+      translation: 'Ich schaue nicht viel Fernsehen.',
+      keywords: ['sentence', 'chapter3', 'habitual actions'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '行きます',
+      hiragana: ' いきます',
+      romaji: 'iki masu',
+      translation: 'Ich komme',
+      keywords: ['chapter3'],
+      answer: null,
+      context: '(zu jemanden Hingehen der spriecht)'
+    },
+    {
+      japanese: '行きます',
+      hiragana: ' いきます',
+      romaji: 'iki masu',
+      translation: 'Ich gehe',
+      keywords: ['chapter3'],
+      answer: null,
+      context: '(zu jemanden weggehen der spriecht)'
+    },
+    {
+      japanese: '土曜日 に 映画 を 見 ませ ん か 。',
+      hiragana: 'どようび に えいが を み ませ ん か 。',
+      romaji: 'Doyōbi ni eiga o mimasen ka.',
+      translation: 'Do you want to see a movie on Saturday?',
+      keywords: ['sentence', 'invitation', 'chapter3'],
+      answer: {
+        japanese: '土曜日 は 、 ちょっと 。',
+        hiragana: 'どようび は 、 ちょっと 。',
+        romaji: 'Doyōbi wa, chotto.',
+        translation: 'Saturday is a bit inconvenient.',
+        keywords: ['sentence', 'decline', 'chapter3'],
+        answer: null,
+        context: null
+      },
+      context: null
+    },
+    {
+      japanese: '5時 に マクドナルド で ハンバーガー を 食べます 。',
+      hiragana: 'ごじ に マクドナルド で ハンバーガー を たべます 。',
+      romaji: 'Go-ji ni Makudonarudo de hanbāgā o tabemasu.',
+      translation: "Um 5 Uhr esse ich einen Hamburger bei McDonald's.",
+      keywords: ['sentence', 'eating', "McDonald's", "5 o'clock", 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '4時30分 に 家 で 音楽 を 聴きます 。',
+      hiragana: 'よじさんじゅっぷん に いえ で おんがく を ききます 。',
+      romaji: 'Yoji sanjuppun ni ie de ongaku o kikimasu.',
+      translation: 'Um 4:30 Uhr höre ich zu Hause Musik.',
+      keywords: ['sentence', 'listening to music', 'home', '4:30', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '3時 に カフェ で コーヒー を 飲みます 。',
+      hiragana: 'さんじ に カフェ で コーヒー を のみます 。',
+      romaji: 'San-ji ni kafe de kōhī o nomimasu.',
+      translation: 'Um 3 Uhr trinke ich Kaffee im Café.',
+      keywords: ['sentence', 'drinking coffee', 'cafe', "3 o'clock", 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '毎日 、大学 で 日本語 を 話します 。',
+      hiragana: 'まいにち 、だいがく で にほんご を はなします 。',
+      romaji: 'Mainichi, daigaku de Nihongo o hanashimasu.',
+      translation: 'Jeden Tag spreche ich Japanisch am College.',
+      keywords: ['sentence', 'speaking Japanese', 'college', 'every day', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '2時 に 図書館 で 雑誌 を 読みます 。',
+      hiragana: 'にじ に としょかん で ざっし を よみます 。',
+      romaji: 'Ni-ji ni toshokan de zasshi o yomimasu.',
+      translation: 'Um 2 Uhr lese ich eine Zeitschrift in der Bibliothek.',
+      keywords: ['sentence', 'reading', 'library', "2 o'clock", 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '今夜 、家 で テレビ を 見ます 。',
+      hiragana: 'こんや 、いえ で テレビ を みます 。',
+      romaji: "Kon'ya, ie de terebi o mimasu.",
+      translation: 'Heute Abend schaue ich zu Hause fern.',
+      keywords: ['sentence', 'watching TV', 'home', 'tonight', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '土曜日 に 学校 で テニス を します 。',
+      hiragana: 'どようび に がっこう で テニス を します 。',
+      romaji: 'Doyōbi ni gakkō de tenisu o shimasu.',
+      translation: 'Am Samstag spiele ich Tennis in der Schule.',
+      keywords: ['sentence', 'playing tennis', 'school', 'Saturday', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '週末 、図書館 で 日本語 を 勉強します 。',
+      hiragana: 'しゅうまつ 、としょかん で にほんご を べんきょうします 。',
+      romaji: 'Shūmatsu, toshokan de Nihongo o benkyōshimasu.',
+      translation: 'Am Wochenende lerne ich Japanisch in der Bibliothek.',
+      keywords: ['sentence', 'studying Japanese', 'library', 'weekend', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: 'うち に 行きます 。',
+      hiragana: 'うち に いきます 。',
+      romaji: 'Uchi ni ikimasu.',
+      translation: 'Ich gehe nach Hause.',
+      keywords: ['sentence', 'going home', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: 'うち に 帰ります 。',
+      hiragana: 'うち に かえります 。',
+      romaji: 'Uchi ni kaerimasu.',
+      translation: 'Ich kehre nach Hause zurück.',
+      keywords: ['sentence', 'returning home', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '学校 に 来ます 。',
+      hiragana: 'がっこう に きます 。',
+      romaji: 'Gakkō ni kimasu.',
+      translation: 'Ich komme zur Schule.',
+      keywords: ['sentence', 'coming to school', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '5時 に 起きます 。',
+      hiragana: 'ごじ に おきます 。',
+      romaji: 'Go-ji ni okimasu.',
+      translation: 'Ich wache um 5 Uhr auf.',
+      keywords: ['sentence', 'waking up', "5 o'clock", 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '11時 に 寝ます 。',
+      hiragana: 'じゅういちじ に ねます 。',
+      romaji: 'Jūichiji ni nemasu.',
+      translation: 'Ich schlafe um 11 Uhr ein.',
+      keywords: ['sentence', 'sleeping', "11 o'clock", 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '山下先生は8時に朝ご飯を食べます。',
+      hiragana: 'やましたせんせいは8じにあさごはんをたべます。',
+      romaji: 'Yamashita-sensei wa 8-ji ni asagohan o tabemasu.',
+      translation: 'Professor Yamashita isst um 8 Uhr Frühstück.',
+      keywords: ['sentence', 'breakfast', "8 o'clock", 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '山下先生は8時30分に大学へ行きます。',
+      hiragana: 'やましたせんせいは8じ30ぷんにだいがくへいきます。',
+      romaji: 'Yamashita-sensei wa 8-ji 30-pun ni daigaku e ikimasu.',
+      translation: 'Professor Yamashita geht um 8:30 Uhr zur Universität.',
+      keywords: ['sentence', 'university', '8:30', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '山下先生は12時に昼ご飯を食べます。',
+      hiragana: 'やましたせんせいは12じにひるごはんをたべます。',
+      romaji: 'Yamashita-sensei wa 12-ji ni hirugohan o tabemasu.',
+      translation: 'Professor Yamashita isst um 12 Uhr zu Mittag.',
+      keywords: ['sentence', 'lunch', "12 o'clock", 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '山下先生は4時にコーヒーを飲みます。',
+      hiragana: 'やましたせんせいは4じにコーヒーをのみます。',
+      romaji: 'Yamashita-sensei wa 4-ji ni kōhī o nomimasu.',
+      translation: 'Professor Yamashita trinkt um 4 Uhr Kaffee.',
+      keywords: ['sentence', 'coffee', "4 o'clock", 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '山下先生は6時に家に帰ります。',
+      hiragana: 'やましたせんせいは6じにいえにかえります。',
+      romaji: 'Yamashita-sensei wa 6-ji ni ie ni kaerimasu.',
+      translation: 'Professor Yamashita geht um 6 Uhr nach Hause.',
+      keywords: ['sentence', 'go home', "6 o'clock", 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '山下先生は7時30分に夕ご飯を食べます。',
+      hiragana: 'やましたせんせいは7じ30ぷんにゆうごはんをたべます。',
+      romaji: 'Yamashita-sensei wa 7-ji 30-pun ni yūgohan o tabemasu.',
+      translation: 'Professor Yamashita isst um 7:30 Uhr zu Abend.',
+      keywords: ['sentence', 'dinner', '7:30', 'chapter3'],
+      answer: null,
+      context: null
+    },
+    {
+      japanese: '山下先生は11時30分に寝ます。',
+      hiragana: 'やましたせんせいは11じ30ぷんにねます。',
+      romaji: 'Yamashita-sensei wa 11-ji 30-pun ni nemasu.',
+      translation: 'Professor Yamashita geht um 11:30 Uhr ins Bett.',
+      keywords: ['sentence', 'go to bed', '11:30', 'chapter3'],
+      answer: null,
+      context: null
     }
   ]
 }))
