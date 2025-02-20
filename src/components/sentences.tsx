@@ -24,9 +24,9 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
     const newRandomSentence = sentences[Math.floor(Math.random() * sentences.length)]
     setRandomSentece(newRandomSentence)
 
-    const words = [...newRandomSentence.hiragana.split(' ')]
+    const words = [...newRandomSentence.translation.split(' ')]
     const tempSentence = sentences[Math.floor(Math.random() * sentences.length)]
-    words.push(...tempSentence.hiragana.split(' '))
+    words.push(...tempSentence.translation.split(' '))
 
     const shuffledWords = words.sort(() => Math.random() - 0.5)
     setChoosableWords(shuffledWords)
@@ -42,7 +42,7 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
   }
 
   const checkWord = (): void => {
-    const test1 = randomSentece?.hiragana.replace(/\s/g, '')
+    const test1 = randomSentece?.translation.replace(/\s/g, '')
     const test2 = answer.replace(/\s/g, '')
 
     if (test1 == test2) {
