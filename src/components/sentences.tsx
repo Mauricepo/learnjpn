@@ -70,11 +70,6 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
         <Card.Section component={Grid} inheritPadding>
           <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
             <Blockquote color="blue" mt="xl">
-              <Text size="sm">{randomSentece?.translation}</Text>
-            </Blockquote>
-          </Grid.Col>
-          <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
-            <Blockquote color="blue" mt="xl">
               <Text size="sm">{randomSentece?.romaji}</Text>
               <Text size="sm">{randomSentece?.hiragana}</Text>
             </Blockquote>
