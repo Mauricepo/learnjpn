@@ -1,4 +1,4 @@
-import { Blockquote, Button, Card, Center, Grid, Group, MantineProvider, SelectProps, Space, Text, Tooltip } from '@mantine/core'
+import { Blockquote, Button, Card, Center, Grid, Group, MantineProvider, SelectProps, Space, Text, Title, Tooltip } from '@mantine/core'
 import { ReactElement, useEffect, useState } from 'react'
 
 import { japaneseStore, useJapaneseStore } from '@/utils/stores/japanese'
@@ -42,10 +42,9 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
   }
 
   const checkWord = (): void => {
-    const test1 = randomSentece?.translation.replace(/\s/g, '')
-    const test2 = answer.replace(/\s/g, '')
-
-    if (test1 == test2) {
+    const test1 = randomSentece?.translation.replace(/\s/g, '').toLowerCase()
+    const test2 = answer.replace(/\s/g, '').toLowerCase()
+    if (test1 === test2) {
       notifications.show({
         position: 'bottom-right',
         color: 'green',
@@ -69,9 +68,17 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
       <Card style={{ paddingTop: '700px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Card.Section component={Grid} inheritPadding>
           <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Title order={2}>Übersetze</Title>
+          </Grid.Col>
+          <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
             <Blockquote color="blue" mt="xl">
-              <Text size="sm">{randomSentece?.romaji}</Text>
-              <Text size="sm">{randomSentece?.hiragana}</Text>
+              <Tooltip
+                label={randomSentece?.translation}
+                key={randomSentece?.translation}
+                events={{ hover: true, focus: true, touch: true }}
+              >
+                <Text size="sm">{randomSentece?.hiragana}</Text>
+              </Tooltip>
             </Blockquote>
           </Grid.Col>
           <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
@@ -93,17 +100,24 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
             <Grid.Col span={{ base: 10, md: 12 }} style={{ display: 'flex', justifyContent: 'center' }}>
               <Group>
                 {choosableWords.map((word, index) => (
-                  <Tooltip label={word} key={index}>
-                    <Button onClick={() => addWord(word)}>{word}</Button>
-                  </Tooltip>
+                  <Button key={index} onClick={() => addWord(word)}>
+                    {word}
+                  </Button>
                 ))}
               </Group>
             </Grid.Col>
           </Center>
-          <Group>
-            <button onClick={() => resetWord()}>Reset</button>
-            <button onClick={() => checkWord()}>Prüfen</button>
-          </Group>
+
+          <Grid.Col span={{ base: 12, md: 12 }} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Center>
+              <Group>
+                <Button onClick={() => resetWord()}>Reset</Button>
+                <Button onClick={() => checkWord()}>Prüfen</Button>
+              </Group>
+            </Center>
+          </Grid.Col>
+
+          <Group></Group>
         </Card.Section>
       </Card>
       <Notifications />
