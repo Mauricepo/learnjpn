@@ -9,14 +9,6 @@ export interface japaneseStore {
 export const useJapaneseStore = create<japaneseStore>((set, get) => ({
   words: [
     {
-      hiragana: 'ときどき',
-      romaji: 'tokidoki',
-      definition: 'manchmal|gelegentlich',
-      keywords: [''],
-      kanji: 'ときどき'
-    },
-
-    {
       hiragana: 'アメリカ',
       romaji: 'amerika',
       definition: 'U.S.A.',
@@ -1023,6 +1015,391 @@ export const useJapaneseStore = create<japaneseStore>((set, get) => ({
       definition: '(Ort/Mittel einer Handlung)',
       keywords: [''],
       kanji: 'で'
+    },
+    {
+      hiragana: 'えいが',
+      romaji: 'eiga',
+      definition: 'movie',
+      keywords: [''],
+      kanji: '映画'
+    },
+    {
+      hiragana: 'おんがく',
+      romaji: 'ongaku',
+      definition: 'music',
+      keywords: [''],
+      kanji: '音楽'
+    },
+    {
+      hiragana: 'ざっし',
+      romaji: 'zasshi',
+      definition: 'magazine',
+      keywords: [''],
+      kanji: '雑誌'
+    },
+    {
+      hiragana: 'スポーツ',
+      romaji: 'supootsu',
+      definition: 'sports',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'デート',
+      romaji: 'deeto',
+      definition: 'date (romantic, not calendar)',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'テニス',
+      romaji: 'tenisu',
+      definition: 'tennis',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'テレビ',
+      romaji: 'terebi',
+      definition: 'TV',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'ビデオ',
+      romaji: 'bideo',
+      definition: 'video tape; VCR',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'あさごはん',
+      romaji: 'asagohan',
+      definition: 'breakfast',
+      keywords: [''],
+      kanji: '朝御飯'
+    },
+    {
+      hiragana: 'おさけ',
+      romaji: 'osake',
+      definition: 'sake; alcohol',
+      keywords: [''],
+      kanji: 'お酒'
+    },
+    {
+      hiragana: 'おちゃ',
+      romaji: 'ocha',
+      definition: 'green tea',
+      keywords: [''],
+      kanji: 'お茶'
+    },
+    {
+      hiragana: 'コーヒー',
+      romaji: 'koohii',
+      definition: 'coffee',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'ばんごはん',
+      romaji: 'bangohan',
+      definition: 'dinner',
+      keywords: [''],
+      kanji: '晩御飯'
+    },
+    {
+      hiragana: 'ハンバーガー',
+      romaji: 'hanbaagaa',
+      definition: 'hamburger',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'ひるごはん',
+      romaji: 'hirugohan',
+      definition: 'lunch',
+      keywords: [''],
+      kanji: '昼御飯'
+    },
+    {
+      hiragana: 'みず',
+      romaji: 'mizu',
+      definition: 'water',
+      keywords: [''],
+      kanji: '水'
+    },
+    {
+      hiragana: 'いえ',
+      romaji: 'ie',
+      definition: 'home; house',
+      keywords: [''],
+      kanji: '家'
+    },
+    {
+      hiragana: 'うち',
+      romaji: 'uchi',
+      definition: 'home; house; my place',
+      keywords: [''],
+      kanji: '家'
+    },
+    {
+      hiragana: 'LL（エルエル）',
+      romaji: 'eru eru',
+      definition: 'language lab',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'がっこう',
+      romaji: 'gakkou',
+      definition: 'school',
+      keywords: [''],
+      kanji: '学校'
+    },
+    {
+      hiragana: 'あさ',
+      romaji: 'asa',
+      definition: 'morning',
+      keywords: [''],
+      kanji: '朝'
+    },
+    {
+      hiragana: 'あした',
+      romaji: 'ashita',
+      definition: 'tomorrow',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'いつ',
+      romaji: 'itsu',
+      definition: 'when',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'きょう',
+      romaji: 'kyou',
+      definition: 'today',
+      keywords: [''],
+      kanji: '今日'
+    },
+    {
+      hiragana: '〜ごろ',
+      romaji: 'goro',
+      definition: 'at about',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'こんばん',
+      romaji: 'konban',
+      definition: 'tonight',
+      keywords: [''],
+      kanji: '今晩'
+    },
+    {
+      hiragana: 'しゅうまつ',
+      romaji: 'shuumatsu',
+      definition: 'weekend',
+      keywords: [''],
+      kanji: '週末'
+    },
+    {
+      hiragana: 'どようび',
+      romaji: 'doyoubi',
+      definition: 'Saturday',
+      keywords: [''],
+      kanji: '土曜日'
+    },
+    {
+      hiragana: 'にちようび',
+      romaji: 'nichiyoubi',
+      definition: 'Sunday',
+      keywords: [''],
+      kanji: '日曜日'
+    },
+    {
+      hiragana: 'まいにち',
+      romaji: 'mainichi',
+      definition: 'every day',
+      keywords: [''],
+      kanji: '毎日'
+    },
+    {
+      hiragana: 'まいばん',
+      romaji: 'maiban',
+      definition: 'every night',
+      keywords: [''],
+      kanji: '毎晩'
+    },
+    {
+      hiragana: 'いく',
+      romaji: 'iku',
+      definition: 'to go',
+      keywords: [''],
+      kanji: '行く'
+    },
+    {
+      hiragana: 'かえる',
+      romaji: 'kaeru',
+      definition: 'to go back; to return',
+      keywords: [''],
+      kanji: '帰る'
+    },
+    {
+      hiragana: 'きく',
+      romaji: 'kiku',
+      definition: 'to listen; to hear',
+      keywords: [''],
+      kanji: '聞く'
+    },
+    {
+      hiragana: 'のむ',
+      romaji: 'nomu',
+      definition: 'to drink',
+      keywords: [''],
+      kanji: '飲む'
+    },
+    {
+      hiragana: 'はなす',
+      romaji: 'hanasu',
+      definition: 'to speak; to talk',
+      keywords: [''],
+      kanji: '話す'
+    },
+    {
+      hiragana: 'よむ',
+      romaji: 'yomu',
+      definition: 'to read',
+      keywords: [''],
+      kanji: '読む'
+    },
+    {
+      hiragana: 'おきる',
+      romaji: 'okiru',
+      definition: 'to get up',
+      keywords: [''],
+      kanji: '起きる'
+    },
+    {
+      hiragana: 'たべる',
+      romaji: 'taberu',
+      definition: 'to eat',
+      keywords: [''],
+      kanji: '食べる'
+    },
+    {
+      hiragana: 'ねる',
+      romaji: 'neru',
+      definition: 'to sleep; to go to sleep',
+      keywords: [''],
+      kanji: '寝る'
+    },
+    {
+      hiragana: 'みる',
+      romaji: 'miru',
+      definition: 'to see; to look at; to watch',
+      keywords: [''],
+      kanji: '見る'
+    },
+    {
+      hiragana: 'くる',
+      romaji: 'kuru',
+      definition: 'to come',
+      keywords: [''],
+      kanji: '来る'
+    },
+    {
+      hiragana: 'する',
+      romaji: 'suru',
+      definition: 'to do',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'べんきょうする',
+      romaji: 'benkyou suru',
+      definition: 'to study',
+      keywords: [''],
+      kanji: '勉強する'
+    },
+    {
+      hiragana: 'いい',
+      romaji: 'ii',
+      definition: 'good',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'はやい',
+      romaji: 'hayai',
+      definition: 'early',
+      keywords: [''],
+      kanji: '早い'
+    },
+    {
+      hiragana: 'あまり+ negative',
+      romaji: 'amari',
+      definition: 'not much',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'ぜんぜん + negative',
+      romaji: 'zenzen',
+      definition: 'not at all',
+      keywords: [''],
+      kanji: '全然'
+    },
+    {
+      hiragana: 'たいてい',
+      romaji: 'taiitei',
+      definition: 'usually',
+      keywords: [''],
+      kanji: '大抵'
+    },
+    {
+      hiragana: 'ちょっと',
+      romaji: 'chotto',
+      definition: 'a little',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'ときどき',
+      romaji: 'tokidoki',
+      definition: 'sometimes',
+      keywords: [''],
+      kanji: '時々'
+    },
+    {
+      hiragana: 'よく',
+      romaji: 'yoku',
+      definition: 'often; much',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'そうですね',
+      romaji: 'sou desu ne',
+      definition: "That's right.; Let me see.",
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'でも',
+      romaji: 'demo',
+      definition: 'but',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'どうですか',
+      romaji: 'dou desu ka',
+      definition: 'How about...?; How is...?',
+      keywords: [''],
+      kanji: ''
     }
   ],
   sentences: [
