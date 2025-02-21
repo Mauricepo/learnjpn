@@ -7,11 +7,12 @@ import { notifications, Notifications } from '@mantine/notifications'
 interface SDragDropProps {}
 
 export const SelectSentence: (props: SelectProps) => ReactElement = (props: SelectProps): ReactElement => {
-  const { sentences }: japaneseStore = useJapaneseStore((state: japaneseStore) => state)
+  const { sentences, words }: japaneseStore = useJapaneseStore((state: japaneseStore) => state)
   const [randomSentece, setRandomSentece] = useState<sentence>()
   const [answer, setAnswer] = useState<string>('')
   const [start, setStart] = useState<boolean>(false)
   const [choosableWords, setChoosableWords] = useState<string[]>([])
+  const [clickedWord, setClickedWord] = useState<string>('')
 
   useEffect(() => {
     if (!start) {
@@ -62,6 +63,18 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
       })
     }
   }
+  const handleClick = () => {
+    const selection = window.getSelection()
+    if (selection && selection.rangeCount > 0) {
+      const word2 = selection.toString().trim()
+      if (word2) {
+        const splittedWord = randomSentece?.hiragana.split(' ').find((word) => word.includes(word2))
+
+        const foundWord = words.find((word) => word.hiragana === splittedWord)
+        setClickedWord(foundWord?.definition || '')
+      }
+    }
+  }
 
   return (
     <MantineProvider>
@@ -72,12 +85,10 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
           </Grid.Col>
           <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
             <Blockquote color="blue" mt="xl">
-              <Tooltip
-                label={randomSentece?.translation}
-                key={randomSentece?.translation}
-                events={{ hover: true, focus: true, touch: true }}
-              >
-                <Text size="sm">{randomSentece?.hiragana}</Text>
+              <Tooltip label={clickedWord} key={clickedWord} events={{ hover: true, focus: true, touch: true }}>
+                <Text onClick={handleClick} style={{ cursor: 'pointer' }} size="sm">
+                  {randomSentece?.hiragana}
+                </Text>
               </Tooltip>
             </Blockquote>
           </Grid.Col>

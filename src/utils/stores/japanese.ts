@@ -9,11 +9,739 @@ export interface japaneseStore {
 export const useJapaneseStore = create<japaneseStore>((set, get) => ({
   words: [
     {
-      hiragana: 'えいが',
-      romaji: 'eiga',
-      definition: 'movie',
-      keywords: ['nomen', 'cinema', 'Chapter3'],
-      kanji: '映画'
+      hiragana: 'アメリカ',
+      romaji: 'amerika',
+      definition: 'U.S.A.',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'イギリス',
+      romaji: 'igirisu',
+      definition: 'Britain',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'オーストラリア',
+      romaji: 'Oosutoraria',
+      definition: 'Australia',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'かんこく',
+      romaji: 'kankoku',
+      definition: 'Korea',
+      keywords: [''],
+      kanji: '韓国'
+    },
+    {
+      hiragana: 'スウェーデン',
+      romaji: 'Sueeden',
+      definition: 'Sweden',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'ちゅうごく',
+      romaji: 'Chuugoku',
+      definition: 'China',
+      keywords: [''],
+      kanji: '中国'
+    },
+    {
+      hiragana: 'かがく',
+      romaji: 'kagaku',
+      definition: 'science',
+      keywords: [''],
+      kanji: '科学'
+    },
+    {
+      hiragana: 'アジアけんきゅう',
+      romaji: 'ajiakenkyuu',
+      definition: 'Asian studies',
+      keywords: [''],
+      kanji: 'アジア研究'
+    },
+    {
+      hiragana: 'こくさいかんけい',
+      romaji: 'kokusaikankei',
+      definition: 'international relations',
+      keywords: [''],
+      kanji: '国際関係'
+    },
+    {
+      hiragana: 'コンピューター',
+      romaji: 'konpyuutaa',
+      definition: 'computer',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'じんるいがく',
+      romaji: 'jinruigaku',
+      definition: 'anthropology',
+      keywords: [''],
+      kanji: '人類学'
+    },
+    {
+      hiragana: 'せいじ',
+      romaji: 'seeji',
+      definition: 'politics',
+      keywords: [''],
+      kanji: '政治'
+    },
+    {
+      hiragana: 'ビジネス',
+      romaji: 'bijinesu',
+      definition: 'business',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'ぶんがく',
+      romaji: 'bungaku',
+      definition: 'literature',
+      keywords: [''],
+      kanji: '文学'
+    },
+    {
+      hiragana: 'れきし',
+      romaji: 'rekishi',
+      definition: 'history',
+      keywords: [''],
+      kanji: '歴史'
+    },
+    {
+      hiragana: 'しごと',
+      romaji: 'shigoto',
+      definition: 'job; work; occupation',
+      keywords: [''],
+      kanji: '仕事'
+    },
+    {
+      hiragana: 'いしゃ',
+      romaji: 'isha',
+      definition: 'doctor',
+      keywords: [''],
+      kanji: '医者'
+    },
+    {
+      hiragana: 'かいしゃいん',
+      romaji: 'kaishain',
+      definition: 'office worker',
+      keywords: [''],
+      kanji: '会社員'
+    },
+    {
+      hiragana: 'こうこうせい',
+      romaji: 'kookoosei',
+      definition: 'high school student',
+      keywords: [''],
+      kanji: '高校生'
+    },
+    {
+      hiragana: 'しゅふ',
+      romaji: 'shufu',
+      definition: 'housewife',
+      keywords: [''],
+      kanji: '主婦'
+    },
+    {
+      hiragana: 'だいがくいんせい',
+      romaji: 'daigakuinsee',
+      definition: 'graduate student',
+      keywords: [''],
+      kanji: '大学院生'
+    },
+    {
+      hiragana: 'だいがくせい',
+      romaji: 'daigakusee',
+      definition: 'college student',
+      keywords: [''],
+      kanji: '大学生'
+    },
+    {
+      hiragana: 'べんごし',
+      romaji: 'bengoshi',
+      definition: 'lawyer',
+      keywords: [''],
+      kanji: '弁護士'
+    },
+    {
+      hiragana: 'おかあさん',
+      romaji: 'okaasan',
+      definition: 'mother',
+      keywords: [''],
+      kanji: 'お母さん'
+    },
+    {
+      hiragana: 'おとうさん',
+      romaji: 'otoosan',
+      definition: 'father',
+      keywords: [''],
+      kanji: 'お父さん'
+    },
+    {
+      hiragana: 'おねえさん',
+      romaji: 'oneesan',
+      definition: 'older sister',
+      keywords: [''],
+      kanji: 'お姉さん'
+    },
+    {
+      hiragana: 'おにいさん',
+      romaji: 'oniisan',
+      definition: 'older brother',
+      keywords: [''],
+      kanji: 'お兄さん'
+    },
+    {
+      hiragana: 'いもうと',
+      romaji: 'imooto',
+      definition: 'younger sister',
+      keywords: [''],
+      kanji: '妹'
+    },
+    {
+      hiragana: 'おとうと',
+      romaji: 'otooto',
+      definition: 'younger brother',
+      keywords: [''],
+      kanji: '弟'
+    },
+    {
+      hiragana: 'あの',
+      romaji: 'ano',
+      definition: 'um...',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'いま',
+      romaji: 'ima',
+      definition: 'now',
+      keywords: [''],
+      kanji: '今'
+    },
+    {
+      hiragana: 'えいご',
+      romaji: 'eego',
+      definition: 'English (language)',
+      keywords: [''],
+      kanji: '英語'
+    },
+    {
+      hiragana: 'がくせい',
+      romaji: 'gakusee',
+      definition: 'student',
+      keywords: [''],
+      kanji: '学生'
+    },
+    {
+      hiragana: '〜ご',
+      romaji: '～go',
+      definition: '...language',
+      keywords: [''],
+      kanji: '〜語'
+    },
+    {
+      hiragana: 'こうこう',
+      romaji: 'kookoo',
+      definition: 'high school',
+      keywords: [''],
+      kanji: '高校'
+    },
+    {
+      hiragana: 'ごご',
+      romaji: 'gogo',
+      definition: 'P.M.',
+      keywords: [''],
+      kanji: '午後'
+    },
+    {
+      hiragana: 'ごぜん',
+      romaji: 'gozen',
+      definition: 'A.M.',
+      keywords: [''],
+      kanji: '午前'
+    },
+    {
+      hiragana: '〜さい',
+      romaji: '～sai',
+      definition: '...years old',
+      keywords: [''],
+      kanji: '〜歳'
+    },
+    {
+      hiragana: '〜さん',
+      romaji: '～san',
+      definition: 'Mr./Ms.',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: '〜じ',
+      romaji: '～ji',
+      definition: "o'clock",
+      keywords: [''],
+      kanji: '〜時'
+    },
+    {
+      hiragana: '〜じん',
+      romaji: '～jin',
+      definition: '...people',
+      keywords: [''],
+      kanji: '〜人'
+    },
+    {
+      hiragana: 'せんせい',
+      romaji: 'sensei',
+      definition: 'teacher; professor',
+      keywords: [''],
+      kanji: '先生'
+    },
+    {
+      hiragana: 'せんもん',
+      romaji: 'senmon',
+      definition: 'major',
+      keywords: [''],
+      kanji: '専門'
+    },
+    {
+      hiragana: 'そうです',
+      romaji: 'soo desu',
+      definition: "That's right.",
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'だいがく',
+      romaji: 'daigaku',
+      definition: 'college; university',
+      keywords: [''],
+      kanji: '大学'
+    },
+    {
+      hiragana: 'でんわ',
+      romaji: 'denwa',
+      definition: 'telephone',
+      keywords: [''],
+      kanji: '電話'
+    },
+    {
+      hiragana: 'ともだち',
+      romaji: 'tomodachi',
+      definition: 'friend',
+      keywords: [''],
+      kanji: '友達'
+    },
+    {
+      hiragana: 'なまえ',
+      romaji: 'namae',
+      definition: 'name',
+      keywords: [''],
+      kanji: '名前'
+    },
+    {
+      hiragana: 'なん／なに',
+      romaji: 'nan/nani',
+      definition: 'what',
+      keywords: [''],
+      kanji: '何'
+    },
+    {
+      hiragana: 'にほん',
+      romaji: 'nihon',
+      definition: 'Japan',
+      keywords: [''],
+      kanji: '日本'
+    },
+    {
+      hiragana: '〜ねんせい',
+      romaji: '～nensee',
+      definition: '...year student',
+      keywords: [''],
+      kanji: '〜年生'
+    },
+    {
+      hiragana: 'はい',
+      romaji: 'hai',
+      definition: 'yes',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'はん',
+      romaji: 'han',
+      definition: 'half',
+      keywords: [''],
+      kanji: '半'
+    },
+    {
+      hiragana: 'ばんごう',
+      romaji: 'bangoo',
+      definition: 'number',
+      keywords: [''],
+      kanji: '番号'
+    },
+    {
+      hiragana: 'りゅうがくせい',
+      romaji: 'ryuugakusee',
+      definition: 'international student',
+      keywords: [''],
+      kanji: '留学生'
+    },
+    {
+      hiragana: 'わたし',
+      romaji: 'watashi',
+      definition: 'I',
+      keywords: [''],
+      kanji: '私'
+    },
+    {
+      hiragana: 'いくら',
+      romaji: 'ikura',
+      definition: 'how much',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: '〜えん',
+      romaji: '～en',
+      definition: '...yen',
+      keywords: [''],
+      kanji: '〜円'
+    },
+    {
+      hiragana: 'たかい',
+      romaji: 'takai',
+      definition: 'expensive',
+      keywords: [''],
+      kanji: '高い'
+    },
+    {
+      hiragana: 'いらっしゃいませ',
+      romaji: 'irasshaimase',
+      definition: 'Welcome (to our store)',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: '（〜を）おねがいします',
+      romaji: '(...o) onegaishimasu',
+      definition: '..., please.',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: '（〜を）ください',
+      romaji: '(...o) kudasai',
+      definition: 'Please give me...',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'じゃあ',
+      romaji: 'jaa',
+      definition: 'then...; if that is the case,...',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: '（〜を）どうぞ',
+      romaji: '(...o) doozo',
+      definition: 'Here it is.',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'どうも',
+      romaji: 'doomo',
+      definition: 'Thank you.',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'これ',
+      romaji: 'kore',
+      definition: 'this one',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'それ',
+      romaji: 'sore',
+      definition: 'that one',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'あれ',
+      romaji: 'are',
+      definition: 'that one (over there)',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'どれ',
+      romaji: 'dore',
+      definition: 'which one',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'この',
+      romaji: 'kono',
+      definition: 'this ...',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'その',
+      romaji: 'sono',
+      definition: 'that ...',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'あの',
+      romaji: 'ano',
+      definition: 'that ... (over there)',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'どの',
+      romaji: 'dono',
+      definition: 'which ...',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'あそこ',
+      romaji: 'asoko',
+      definition: 'over there',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'どこ',
+      romaji: 'doko',
+      definition: 'where',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'だれ',
+      romaji: 'dare',
+      definition: 'who',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'おいしい',
+      romaji: 'oishii',
+      definition: 'delicious',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'さかな',
+      romaji: 'sakana',
+      definition: 'fish',
+      keywords: [''],
+      kanji: '魚'
+    },
+    {
+      hiragana: 'とんかつ',
+      romaji: 'tonkatsu',
+      definition: 'pork cutlet',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'にく',
+      romaji: 'niku',
+      definition: 'meat',
+      keywords: [''],
+      kanji: '肉'
+    },
+    {
+      hiragana: 'メニュー',
+      romaji: 'menyuu',
+      definition: 'menu',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'やさい',
+      romaji: 'yasai',
+      definition: 'vegetable',
+      keywords: [''],
+      kanji: '野菜'
+    },
+    {
+      hiragana: 'えんぴつ',
+      romaji: 'enpitsu',
+      definition: 'pencil',
+      keywords: [''],
+      kanji: '鉛筆'
+    },
+    {
+      hiragana: 'かさ',
+      romaji: 'kasa',
+      definition: 'umbrella',
+      keywords: [''],
+      kanji: '傘'
+    },
+    {
+      hiragana: 'かばん',
+      romaji: 'kaban',
+      definition: 'bag',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'くつ',
+      romaji: 'kutsu',
+      definition: 'shoes',
+      keywords: [''],
+      kanji: '靴'
+    },
+    {
+      hiragana: 'さいふ',
+      romaji: 'saifu',
+      definition: 'wallet',
+      keywords: [''],
+      kanji: '財布'
+    },
+    {
+      hiragana: 'ジーンズ',
+      romaji: 'jiinzu',
+      definition: 'jeans',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'じしょ',
+      romaji: 'jisho',
+      definition: 'dictionary',
+      keywords: [''],
+      kanji: '辞書'
+    },
+    {
+      hiragana: 'じてんしゃ',
+      romaji: 'jitensha',
+      definition: 'bicycle',
+      keywords: [''],
+      kanji: '自転車'
+    },
+    {
+      hiragana: 'しんぶん',
+      romaji: 'shinbun',
+      definition: 'newspaper',
+      keywords: [''],
+      kanji: '新聞'
+    },
+    {
+      hiragana: 'テープ',
+      romaji: 'teepu',
+      definition: 'tape',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'とけい',
+      romaji: 'tokee',
+      definition: 'watch; clock',
+      keywords: [''],
+      kanji: '時計'
+    },
+    {
+      hiragana: 'トレーナー',
+      romaji: 'toreenaa',
+      definition: 'sweatshirt',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'ノート',
+      romaji: 'nooto',
+      definition: 'notebook',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'ペン',
+      romaji: 'pen',
+      definition: 'pen',
+      keywords: [''],
+      kanji: ''
+    },
+    {
+      hiragana: 'ぼうし',
+      romaji: 'booshi',
+      definition: 'hat; cap',
+      keywords: [''],
+      kanji: '帽子'
+    },
+    {
+      hiragana: 'ほん',
+      romaji: 'hon',
+      definition: 'book',
+      keywords: [''],
+      kanji: '本'
+    },
+    {
+      hiragana: 'おてあらい',
+      romaji: 'otearai',
+      definition: 'restroom',
+      keywords: [''],
+      kanji: 'お手洗い'
+    },
+    {
+      hiragana: 'きっさてん',
+      romaji: 'kissaten',
+      definition: 'cafe',
+      keywords: [''],
+      kanji: '喫茶店'
+    },
+    {
+      hiragana: 'ぎんこう',
+      romaji: 'ginkoo',
+      definition: 'bank',
+      keywords: [''],
+      kanji: '銀行'
+    },
+    {
+      hiragana: 'としょかん',
+      romaji: 'toshokan',
+      definition: 'library',
+      keywords: [''],
+      kanji: '図書館'
+    },
+    {
+      hiragana: 'ゆうびんきょく',
+      romaji: 'yuubinkyoku',
+      definition: 'post office',
+      keywords: [''],
+      kanji: '郵便局'
+    },
+    {
+      hiragana: 'けいざい',
+      romaji: 'keezai',
+      definition: 'economics',
+      keywords: [''],
+      kanji: '経済'
+    },
+    {
+      hiragana: 'わたし',
+      romaji: 'watachi',
+      definition: 'ich',
+      keywords: [''],
+      kanji: '私'
     },
     {
       hiragana: 'おんがく',
