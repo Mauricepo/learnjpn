@@ -980,6 +980,41 @@ export const useJapaneseStore = create<japaneseStore>((set, get) => ({
       definition: 'to drink',
       keywords: ['beverage', 'consume', 'Chapter3'],
       kanji: '飲む'
+    },
+    {
+      hiragana: 'は',
+      romaji: 'ha',
+      definition: '(Thema des Satzes)',
+      keywords: [''],
+      kanji: 'は'
+    },
+    {
+      hiragana: 'を',
+      romaji: 'wo',
+      definition: '(Objekt eines Verbs)',
+      keywords: [''],
+      kanji: 'を'
+    },
+    {
+      hiragana: 'へ',
+      romaji: 'o',
+      definition: '(Richtung/Ziel)',
+      keywords: [''],
+      kanji: 'へ'
+    },
+    {
+      hiragana: 'に',
+      romaji: 'ni',
+      definition: '(Ziel, Zeit, Existenz)',
+      keywords: [''],
+      kanji: 'に'
+    },
+    {
+      hiragana: 'で',
+      romaji: 'de',
+      definition: '(Ort/Mittel einer Handlung)',
+      keywords: [''],
+      kanji: 'で'
     }
   ],
   sentences: [

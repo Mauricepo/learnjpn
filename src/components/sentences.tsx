@@ -84,12 +84,20 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
             <Title order={2}>Übersetze</Title>
           </Grid.Col>
           <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
-            <Blockquote color="blue" mt="xl">
-              <Tooltip label={clickedWord} key={clickedWord} events={{ hover: true, focus: true, touch: true }}>
-                <Text onClick={handleClick} style={{ cursor: 'pointer' }} size="sm">
-                  {randomSentece?.hiragana}
-                </Text>
-              </Tooltip>
+            <Blockquote color="blue" mt="0">
+              <Group gap="xs">
+                {randomSentece?.hiragana.split(' ').map((word, index) => (
+                  <Tooltip
+                    label={words.find((word2) => word2.hiragana === word)?.definition || ''}
+                    key={word}
+                    events={{ hover: true, focus: true, touch: true }}
+                  >
+                    <Text key={index} size="sm">
+                      {word}
+                    </Text>
+                  </Tooltip>
+                ))}
+              </Group>
             </Blockquote>
           </Grid.Col>
           <Grid.Col span={{ base: 12, md: 6 }} style={{ display: 'flex', justifyContent: 'center' }}>
