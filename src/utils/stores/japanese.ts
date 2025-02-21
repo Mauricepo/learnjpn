@@ -9,6 +9,14 @@ export interface japaneseStore {
 export const useJapaneseStore = create<japaneseStore>((set, get) => ({
   words: [
     {
+      hiragana: 'ときどき',
+      romaji: 'tokidoki',
+      definition: 'manchmal|gelegentlich',
+      keywords: [''],
+      kanji: 'ときどき'
+    },
+
+    {
       hiragana: 'アメリカ',
       romaji: 'amerika',
       definition: 'U.S.A.',
