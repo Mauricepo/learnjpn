@@ -71,7 +71,7 @@ export const SelectSentence: (props: SelectProps) => ReactElement = (props: Sele
         const splittedWord = randomSentece?.hiragana.split(' ').find((word) => word.includes(word2))
 
         const foundWord = words.find((word) => word.hiragana === splittedWord)
-        setClickedWord(foundWord?.definition || '')
+        setClickedWord(foundWord?.hiragana + '|' + foundWord?.definition || '')
       }
     }
   }
