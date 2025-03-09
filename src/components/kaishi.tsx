@@ -39,8 +39,8 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
   }
 
   const checkSchreibweise = (): void => {
-    if (schreibweise === randomkanji?.hiragana) {
-      setScreibweiseWrong(true)
+    if (schreibweise == randomkanji?.hiragana) {
+      setScreibweiseRight(true)
     } else {
       notifications.show({
         position: 'bottom-center',
