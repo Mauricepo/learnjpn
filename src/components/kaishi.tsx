@@ -51,7 +51,7 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
   }
 
   const checkMeaning = (): void => {
-    if (meaning && randomkanji?.meaning.includes(meaning)) {
+    if (meaning?.toLowerCase() && randomkanji?.meaning.toLowerCase().includes(meaning)) {
       setMeaningRight(true)
     } else {
       notifications.show({
