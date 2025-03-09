@@ -53,16 +53,21 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
   }
 
   const changeSchreibweise = (romaji: string): void => {
-    if (!romaji.endsWith('m')) {
+    if (!romaji.endsWith('m') && !romaji.endsWith('n')) {
       const convertedSchreibweise = hepburn.toHiragana(romaji)
       setSchreibweise(convertedSchreibweise)
     } else {
-      setSchreibweise(romaji)
+      if (romaji.endsWith('nn')) {
+        const convertedSchreibweise = hepburn.toHiragana(romaji)
+        setSchreibweise(convertedSchreibweise.slice(0, -1))
+      } else {
+        setSchreibweise(romaji)
+      }
     }
   }
 
   const checkMeaning = (): void => {
-    if (meaning?.toLowerCase() && randomkanji?.meaning.toLowerCase().includes(meaning)) {
+    if (meaning?.toLowerCase().normalize() && randomkanji?.meaning.toLowerCase().normalize().includes(meaning)) {
       setMeaningRight(true)
     } else {
       notifications.show({
