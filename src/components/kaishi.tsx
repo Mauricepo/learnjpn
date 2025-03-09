@@ -4,7 +4,6 @@ import { ReactElement, useEffect, useState } from 'react'
 import { kanjiStore, useKanjiStore } from '@/utils/stores/kanji'
 import { kanji } from '@/utils/types/words'
 import { notifications, Notifications } from '@mantine/notifications'
-import hepburn from 'hepburn'
 
 interface SDragDropProps {}
 
@@ -53,17 +52,19 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
   }
 
   const changeSchreibweise = (romaji: string): void => {
-    if (!romaji.endsWith('m') && !romaji.endsWith('n')) {
-      const convertedSchreibweise = hepburn.toHiragana(romaji)
-      setSchreibweise(convertedSchreibweise)
-    } else {
-      if (romaji.endsWith('nn')) {
-        const convertedSchreibweise = hepburn.toHiragana(romaji)
-        setSchreibweise(convertedSchreibweise.slice(0, -1))
-      } else {
-        setSchreibweise(romaji)
-      }
-    }
+    // if (!romaji.endsWith('m') && !romaji.endsWith('n')) {
+    //   const convertedSchreibweise = hepburn.toHiragana(romaji)
+    //   setSchreibweise(convertedSchreibweise)
+    // } else {
+    //   if (romaji.endsWith('nn')) {
+    //     const convertedSchreibweise = hepburn.toHiragana(romaji)
+    //     setSchreibweise(convertedSchreibweise.slice(0, -1))
+    //   } else {
+    //     setSchreibweise(romaji)
+    //   }
+    // }
+
+    setSchreibweise(romaji)
   }
 
   const checkMeaning = (): void => {
