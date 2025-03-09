@@ -53,8 +53,12 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
   }
 
   const changeSchreibweise = (romaji: string): void => {
-    const convertedSchreibweise = hepburn.toHiragana(romaji)
-    setSchreibweise(convertedSchreibweise)
+    if (!romaji.endsWith('m')) {
+      const convertedSchreibweise = hepburn.toHiragana(romaji)
+      setSchreibweise(convertedSchreibweise)
+    } else {
+      setSchreibweise(romaji)
+    }
   }
 
   const checkMeaning = (): void => {
