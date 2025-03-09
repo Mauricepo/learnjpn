@@ -4,6 +4,8 @@ import { ReactElement, useEffect, useState } from 'react'
 import { kanjiStore, useKanjiStore } from '@/utils/stores/kanji'
 import { kanji } from '@/utils/types/words'
 import { notifications, Notifications } from '@mantine/notifications'
+import hepburn from 'hepburn'
+
 interface SDragDropProps {}
 
 export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectProps): ReactElement => {
@@ -38,7 +40,7 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
 
   const checkSchreibweise = (): void => {
     if (schreibweise === randomkanji?.hiragana) {
-      setScreibweiseRight(true)
+      setScreibweiseWrong(true)
     } else {
       notifications.show({
         position: 'bottom-center',
@@ -48,6 +50,11 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
       })
       setScreibweiseWrong(true)
     }
+  }
+
+  const changeSchreibweise = (romaji: string): void => {
+    const convertedSchreibweise = hepburn.toHiragana(romaji)
+    setSchreibweise(convertedSchreibweise)
   }
 
   const checkMeaning = (): void => {
@@ -81,7 +88,7 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
         <Card.Section component={Grid} inheritPadding>
           <Grid.Col span={{ base: 12, md: 12 }} style={{ display: 'flex', justifyContent: 'center' }}>
             <Group align="end">
-              <TextInput value={schreibweise} onChange={(event) => setSchreibweise(event.currentTarget.value)} label="Schreibweise" />
+              <TextInput value={schreibweise} onChange={(event) => changeSchreibweise(event.currentTarget.value)} label="Schreibweise" />
               <Button color={screibweiseRight ? 'green' : 'blue'} onClick={() => checkSchreibweise()}>
                 +
               </Button>
