@@ -19,5 +19,4 @@ export interface kanji {
   kanji: string
   hiragana: string
   meaning: string
-  romaji: string
 }

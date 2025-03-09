@@ -1,6 +1,6 @@
 import { Center } from '@mantine/core'
 import { ReactElement, useState } from 'react'
-import { SelectKanji } from './kanji'
+import { SelectKanji } from './kaishi'
 import { SelectWord } from './select'
 import { SelectSentence } from './sentences'
 
