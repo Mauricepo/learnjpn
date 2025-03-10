@@ -1,4 +1,4 @@
-import { Blockquote, Button, Card, Center, Grid, Group, MantineProvider, SelectProps, Space, Text, TextInput } from '@mantine/core'
+import { Button, Card, Center, Grid, Group, MantineProvider, Paper, SelectProps, Space, Text, TextInput } from '@mantine/core'
 import { ReactElement, useEffect, useState } from 'react'
 
 import { kanjiStore, useKanjiStore } from '@/utils/stores/kanji'
@@ -86,11 +86,11 @@ export const SelectKanji: (props: SelectProps) => ReactElement = (props: SelectP
       <Card style={{ paddingTop: '500px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Card.Section component={Grid} inheritPadding>
           <Grid.Col span={{ base: 12, md: 12 }} style={{ display: 'flex', justifyContent: 'center' }}>
-            <Blockquote color="blue" mt="xl">
+            <Paper shadow="xs" p="xl">
               <Text size="xl">{randomkanji?.kanji}</Text>
               {screibweiseWrong && <Text size="xl">{randomkanji?.hiragana}</Text>}
               {meaningWrong && <Text size="xl">{randomkanji?.meaning}</Text>}
-            </Blockquote>
+            </Paper>
           </Grid.Col>
         </Card.Section>
         <Space></Space>
